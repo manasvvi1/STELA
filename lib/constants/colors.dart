@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:stela_app/subjects.dart';
 
 void main() {
   runApp(MyApp());
