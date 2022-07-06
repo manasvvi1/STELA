@@ -32,7 +32,6 @@ class MyApp extends StatelessWidget {
                   Icons.home,
                   color: Colors.black,
                   size: 40,
-                  semanticLabel: 'Text to announce in accessibility modes',
                 ),
                 Icon(
                   Icons.saved_search_rounded,
