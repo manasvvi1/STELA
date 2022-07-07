@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
                     child: Column(
                       children: [
                         FlatButton(
-                          padding: EdgeInsets.all(100),
+                          padding: EdgeInsets.all(50),
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
