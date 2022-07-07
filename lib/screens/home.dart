@@ -52,7 +52,7 @@ class _MyAppState extends State<MyApp> {
                         },
                       ),
                       FlatButton(
-                        padding: EdgeInsets.all(40),
+                        padding: EdgeInsets.all(70),
                         child: Container(
                             width: double.infinity,
                             padding: EdgeInsets.symmetric(vertical: 5),
