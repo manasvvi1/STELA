@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
               children: [
                 Container(
 
-                  child: Text('LOGIN', style: TextStyle(fontSize: 50, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
+                  child: Text('LOGIN CREDENTIALS', style: TextStyle(fontSize: 50, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
                   margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
                   alignment: Alignment.center,
                   padding: EdgeInsets.all(2),
@@ -55,8 +55,24 @@ class MyApp extends StatelessWidget {
                       border: Border.all(width: 1,color: primBlue),
                       borderRadius: BorderRadius.circular(20),
                     )
-                )
+                ),
+                FlatButton(
+                  padding: EdgeInsets.all(0),
+                  child: Container(
+                      width: double.infinity,
+                      padding: EdgeInsets.symmetric(vertical: 5),
+                      decoration: BoxDecoration(
+                        color: primIceBlue,
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(width: 2.0, color: primBlue),
+                      ),
+                      child: Text('LOGIN', style: TextStyle(fontSize: 15, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold), textAlign: TextAlign.center,)
+                  ),
+                  onPressed: () {
 
+                  },
+
+                ),
               ],
             )
         ),
