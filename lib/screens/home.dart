@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 
+var expNum;
+
+void main() {
+  runApp(MyApp());
+}
+
 class MyApp extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
@@ -14,12 +20,12 @@ class _MyAppState extends State<MyApp> {
           backgroundColor: primPink,
           body: SingleChildScrollView(
             child: Container(
-              margin: EdgeInsets.symmetric(vertical: 150, horizontal: 15),
+              margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
               alignment: Alignment.center,
               padding: EdgeInsets.all(10),
               child: Column(
                 children: [
-                  Container(padding: EdgeInsets.all(10), child: Text('STELA', style: TextStyle(color: Colors.white, fontSize: 25, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold))),
+                  Container(padding: EdgeInsets.all(10), child: Text('STELA', style: TextStyle(color: Colors.white30, fontSize: 35, fontFamily: 'Mandorlato-ExtraBold', fontWeight: FontWeight.bold))),
                   Container(
                     child: Column(
                       children: [
@@ -35,12 +41,14 @@ class _MyAppState extends State<MyApp> {
                               ),
                               child: Text(
                                 'LOG IN',
-                                style: TextStyle(fontSize: 30, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold),
+                                style: TextStyle(fontSize: 20, fontFamily: 'Mandorlato-Bold', fontWeight: FontWeight.bold),
                                 textAlign: TextAlign.center,
                               )),
                           onPressed: () {
                             setState(() {
+                              expNum = 0;
                             });
+                            print(expNum);
                           },
                         ),
                         FlatButton(
@@ -55,14 +63,17 @@ class _MyAppState extends State<MyApp> {
                               ),
                               child: Text(
                                 'SIGN UP',
-                                style: TextStyle(fontSize: 30, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold),
+                                style: TextStyle(fontSize: 20, fontFamily: 'Mandorlato-Bold', fontWeight: FontWeight.bold),
                                 textAlign: TextAlign.center,
                               )),
                           onPressed: () {
                             setState(() {
+                              expNum = 1;
                             });
+                            print(expNum);
                           },
                         ),
+                      ],
                     ),
                   ),
                 ],
