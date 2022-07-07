@@ -39,6 +39,13 @@ class _MyAppState extends State<MyApp> {
                               borderRadius: BorderRadius.circular(10),
                               border: Border.all(width: 2.0, color: primLightPink),
                             ),
+                            child: Padding(
+        padding: EdgeInsets.all(16.0),
+        child: CircleAvatar(
+          radius: 72.0,
+          backgroundColor: Colors.transparent,
+          backgroundImage: AssetImage('assets/images/splash_screen.png'),
+        ),
                             child: Text(
                               'LOG IN',
                               style: TextStyle(fontSize: 20, fontFamily: 'Mandorlato-Bold', fontWeight: FontWeight.bold),
@@ -52,7 +59,7 @@ class _MyAppState extends State<MyApp> {
                         },
                       ),
                       FlatButton(
-                        padding: EdgeInsets.all(40),
+                        padding: EdgeInsets.all(70),
                         child: Container(
                             width: double.infinity,
                             padding: EdgeInsets.symmetric(vertical: 5),
