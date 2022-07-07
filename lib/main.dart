@@ -17,169 +17,67 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
             backgroundColor: primPink,
-            body: SingleChildScrollView(
-              child: Container(
+            body: Container(
                   margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
                   alignment: Alignment.center,
                   padding: EdgeInsets.all(10),
                   child: Column(
                     children: [
+Container(
+
+  child: Text('LOGIN CREDENTIALS', style: TextStyle(fontSize: 50, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
+  margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
+  alignment: Alignment.center,
+  padding: EdgeInsets.all(2),
+
+
+),
                       Container(
-                          padding: EdgeInsets.all(10),
-                          child: Text('Experiment No.'+expNo[num], style: TextStyle(fontSize: 25, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold))
-                      ), // Heading
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: primIceBlue,
-                        ),
-                        child: Text('AIM', style: TextStyle(fontSize: 12, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
-                      ), // AIM heading
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        width: double.infinity,
-                        child: Flexible(
-                          child: Container(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Text(
-                                  aim[num],
-                                ),
-                              ],
+
+                        margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
+                        alignment: Alignment.center,
+                        padding: EdgeInsets.all(2),
+                        child: Text('USERNAME', style: TextStyle(fontSize: 35, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
+                          decoration: BoxDecoration(
+                            color: primIceBlue,
+                            border: Border.all(width: 1,color: primBlue),
+                            borderRadius: BorderRadius.circular(20),
+                          )
+                      ),
+                      Container (
+
+                        margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
+                        alignment: Alignment.center,
+                        padding: EdgeInsets.all(2),
+                        child: Text('PASSWORD', style: TextStyle(fontSize: 35, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
+                          decoration: BoxDecoration(
+                            color: primIceBlue,
+                            border: Border.all(width: 1,color: primBlue),
+                            borderRadius: BorderRadius.circular(20),
+                          )
+                      ),
+                      FlatButton(
+                        padding: EdgeInsets.all(0),
+                        child: Container(
+                            width: double.infinity,
+                            padding: EdgeInsets.symmetric(vertical: 5),
+                            decoration: BoxDecoration(
+                              color: primIceBlue,
+                              borderRadius: BorderRadius.circular(10),
+                              border: Border.all(width: 2.0, color: primBlue),
                             ),
-                          ),
+                            child: Text('LOGIN', style: TextStyle(fontSize: 15, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold), textAlign: TextAlign.center,)
                         ),
-                      ), // AIM text
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: primIceBlue,
-                        ),
-                        width: double.infinity,
-                        child: Text('PROCEDURE', style: TextStyle(fontSize: 12, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
-                      ), // PROCEDURE heading
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        width: double.infinity,
-                        child: Flexible(
-                          child: Container(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Text(
-                                  procedure[num],
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ), // PROCEDURE text
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: primIceBlue,
-                        ),
-                        width: double.infinity,
-                        child: Text('ALGORITHM', style: TextStyle(fontSize: 12, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
-                      ), // ALGORITHM heading
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        width: double.infinity,
-                        child: Flexible(
-                          child: Container(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Text(
-                                  algorithm[num],
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ), // ALGORITHM text
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: primIceBlue,
-                        ),
-                        width: double.infinity,
-                        child: Text('PROGRAM', style: TextStyle(fontSize: 12, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
-                      ), // PROGRAM heading
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        width: double.infinity,
-                        child: Flexible(
-                          child: Container(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Text(
-                                  program[num],
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ), // PROGRAM text
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: primIceBlue,
-                        ),
-                        width: double.infinity,
-                        child: Text('RESULT', style: TextStyle(fontSize: 12, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
-                      ), // RESULT heading
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        width: double.infinity,
-                        child: Flexible(
-                          child: Container(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Text(
-                                  result[num],
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ), // RESULT text
-                    ],
-                  )
-              ),
+                        onPressed: () {
+
+                        },
+
+                      ),
+                        ],
+                      )
             ),
-            bottomNavigationBar: Container(
-              padding: EdgeInsets.all(7),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: const <Widget>[
-                  Icon(
-                    Icons.home,
-                    color: Colors.black,
-                    size: 40,
-                  ),
-                  Icon(
-                    Icons.saved_search_rounded,
-                    color: Colors.black,
-                    size: 40,
-                  ),
-                  Icon(
-                    Icons.account_circle,
-                    color: Colors.black,
-                    size: 40,
-                  ),
-                ],
-              ),
-            )));
+        ),
+    );
   }
 }
 
