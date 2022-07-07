@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          backgroundColor: primPink,
+          backgroundColor: primIceBlue,
           body: SingleChildScrollView(
             child: Container(
               margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
