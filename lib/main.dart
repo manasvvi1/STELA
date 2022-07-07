@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          backgroundColor: primPink,
+          backgroundColor: primIceBlue,
           body: SingleChildScrollView(
             child: Container(
               margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
@@ -25,19 +25,19 @@ class _MyAppState extends State<MyApp> {
               padding: EdgeInsets.all(10),
               child: Column(
                 children: [
-                  Container(padding: EdgeInsets.all(10), child: Text('STELA', style: TextStyle(color: Colors.white30, fontSize: 35, fontFamily: 'Mandorlato-ExtraBold', fontWeight: FontWeight.bold))),
+                  Container(padding: EdgeInsets.all(10), child: Text('STELA', style: TextStyle(color: Colors.white, fontSize: 35, fontFamily: 'Mandorlato-ExtraBold', fontWeight: FontWeight.bold))),
                   Container(
                     child: Column(
                       children: [
                         FlatButton(
-                          padding: EdgeInsets.all(0),
+                          padding: EdgeInsets.all(30),
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
                               decoration: BoxDecoration(
-                                color: primIceBlue,
+                                color: primPink,
                                 borderRadius: BorderRadius.circular(10),
-                                border: Border.all(width: 2.0, color: primBlue),
+                                border: Border.all(width: 2.0, color: primLightPink),
                               ),
                               child: Text(
                                 'LOG IN',
@@ -52,14 +52,14 @@ class _MyAppState extends State<MyApp> {
                           },
                         ),
                         FlatButton(
-                          padding: EdgeInsets.all(0),
+                          padding: EdgeInsets.all(40),
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
                               decoration: BoxDecoration(
-                                color: primIceBlue,
+                                color: primPink,
                                 borderRadius: BorderRadius.circular(10),
-                                border: Border.all(width: 2.0, color: primBlue),
+                                border: Border.all(width: 2.0, color: primLightPink),
                               ),
                               child: Text(
                                 'SIGN UP',
