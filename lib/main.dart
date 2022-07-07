@@ -167,7 +167,7 @@ class _MyAppState extends State<MyApp> {
                           onPressed: () {},
                         ),
                         FlatButton(
-                          padding: EdgeInsets.all(0),
+                          padding: EdgeInsets.all(2),
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
