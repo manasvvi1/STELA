@@ -20,7 +20,7 @@ class _MyAppState extends State<MyApp> {
         children: <Widget>[
           //We take the image from the assets
           Image.asset(
-            'assets/splash-image.png',
+            'assets/splash_screen.png',
             height: 250,
           ),
           SizedBox(
@@ -28,13 +28,13 @@ class _MyAppState extends State<MyApp> {
           ),
           //Texts and Styling of them
           Text(
-            'Welcome to TGD !',
+            'Welcome to STELA !',
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white, fontSize: 28),
           ),
           SizedBox(height: 20),
           Text(
-            'A one-stop portal for you to learn the latest technologies from SCRATCH',
+            'Student Teacher Education and Learning App',
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white, fontSize: 16),
           ),
