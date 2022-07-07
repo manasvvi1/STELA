@@ -35,9 +35,9 @@ class _MyAppState extends State<MyApp> {
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
                               decoration: BoxDecoration(
-                                color: primIceBlue,
+                                color: primPink,
                                 borderRadius: BorderRadius.circular(10),
-                                border: Border.all(width: 2.0, color: primBlue),
+                                border: Border.all(width: 2.0, color: primLightPink),
                               ),
                               child: Text(
                                 'LOG IN',
@@ -57,9 +57,9 @@ class _MyAppState extends State<MyApp> {
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
                               decoration: BoxDecoration(
-                                color: primIceBlue,
+                                color: primLightPink,
                                 borderRadius: BorderRadius.circular(10),
-                                border: Border.all(width: 2.0, color: primBlue),
+                                border: Border.all(width: 2.0, color: primLightPink),
                               ),
                               child: Text(
                                 'SIGN UP',
