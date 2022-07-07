@@ -20,7 +20,7 @@ class _MyAppState extends State<MyApp> {
         children: <Widget>[
           //We take the image from the assets
           Image.asset(
-            'assets/splash_screen.png',
+            'assets/images/splash_screen.png',
             height: 250,
           ),
           SizedBox(
