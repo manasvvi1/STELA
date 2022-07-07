@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
               padding: EdgeInsets.all(10),
               child: Column(
                 children: [
-                  Container(padding: EdgeInsets.all(10), child: Text('STELA', style: TextStyle(color: Colors.white30, fontSize: 35, fontFamily: 'Mandorlato-ExtraBold', fontWeight: FontWeight.bold))),
+                  Container(padding: EdgeInsets.all(10), child: Text('STELA', style: TextStyle(color: Colors.white, fontSize: 35, fontFamily: 'Mandorlato-ExtraBold', fontWeight: FontWeight.bold))),
                   Container(
                     child: Column(
                       children: [
