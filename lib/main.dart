@@ -3,9 +3,8 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
-import 'package:stela_app/screens/experiment.dart';
 
-var num = 1;
+
 
 void main() {
   runApp(MyApp());
@@ -34,7 +33,7 @@ class MyApp extends StatelessWidget {
                 ),
                 Container(
 
-                    margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                     alignment: Alignment.center,
                     padding: EdgeInsets.all(2),
                     child: Text('USERNAME', style: TextStyle(fontSize: 35, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
@@ -44,9 +43,17 @@ class MyApp extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     )
                 ),
+                Container(
+                  child: TextField(
+                    decoration: InputDecoration(
+                      hintText: "Enter Username",
+
+                    ),
+                  )
+                ),
                 Container (
 
-                    margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                     alignment: Alignment.center,
                     padding: EdgeInsets.all(2),
                     child: Text('PASSWORD', style: TextStyle(fontSize: 35, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
@@ -56,17 +63,25 @@ class MyApp extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     )
                 ),
+                Container(
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: "Enter Password",
+
+                      ),
+                    )
+                ),
                 FlatButton(
                   padding: EdgeInsets.all(0),
                   child: Container(
-                      width: double.infinity,
-                      padding: EdgeInsets.symmetric(vertical: 5),
+
+                      padding: EdgeInsets.symmetric(vertical: 5,horizontal: 15),
                       decoration: BoxDecoration(
                         color: primIceBlue,
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(width: 2.0, color: primBlue),
                       ),
-                      child: Text('LOGIN', style: TextStyle(fontSize: 15, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold), textAlign: TextAlign.center,)
+                      child: Text('LOGIN', style: TextStyle(fontSize: 20, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold), textAlign: TextAlign.center,)
                   ),
                   onPressed: () {
 
@@ -126,4 +141,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
