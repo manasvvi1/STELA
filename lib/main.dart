@@ -17,7 +17,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      backgroundColor: primIceBlue,
+      backgroundColor: Colors.transparent,
+      //backgroundImage: AssetImage("asssets/images/splash_screen.png"),
       body: SingleChildScrollView(
         child: Container(
           margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
@@ -26,6 +27,12 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             children: [
               Container(padding: EdgeInsets.all(10), child: Text('STELA', style: TextStyle(color: Colors.white, fontSize: 35, fontFamily: 'Mandorlato-ExtraBold', fontWeight: FontWeight.bold))),
+              Container(decoration: new BoxDecoration(
+              image: DecorationImage(
+              image: new AssetImage(
+                  'assets/images/splash_screen.png'),
+              fit: BoxFit.fill,
+              ),))
               Container(
                 child: Column(
                   children: [
