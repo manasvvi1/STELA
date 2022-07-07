@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
       body: SingleChildScrollView(
         child: Container(
           margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
-          alignment: Alignment.center,
+          alignment: Alignment.topCenter,
           padding: EdgeInsets.all(60),
           child: Column(
             children: [
