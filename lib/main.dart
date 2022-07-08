@@ -21,58 +21,77 @@ class MyApp extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-
-                  child: Text('LOGIN CREDENTIALS', style: TextStyle(fontSize: 50, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
+                  child: Text('LOGIN CREDENTIALS',
+                      style: TextStyle(
+                          fontSize: 50,
+                          fontFamily: 'Mandorlato',
+                          fontWeight: FontWeight.bold)),
                   margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
                   alignment: Alignment.center,
                   padding: EdgeInsets.all(2),
-
-
                 ),
                 Container(
-
-                    margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                     alignment: Alignment.center,
                     padding: EdgeInsets.all(2),
-                    child: Text('USERNAME', style: TextStyle(fontSize: 35, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
+                    child: Text('USERNAME',
+                        style: TextStyle(
+                            fontSize: 35,
+                            fontFamily: 'Mandorlato',
+                            fontWeight: FontWeight.bold)),
                     decoration: BoxDecoration(
                       color: primIceBlue,
-                      border: Border.all(width: 1,color: primBlue),
+                      border: Border.all(width: 1, color: primBlue),
                       borderRadius: BorderRadius.circular(20),
-                    )
-                ),
-                Container (
-
-                    margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
+                    )),
+                Container(
+                    child: TextField(
+                  decoration: InputDecoration(
+                    hintText: "Enter Username",
+                  ),
+                )),
+                Container(
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                     alignment: Alignment.center,
                     padding: EdgeInsets.all(2),
-                    child: Text('PASSWORD', style: TextStyle(fontSize: 35, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
+                    child: Text('PASSWORD',
+                        style: TextStyle(
+                            fontSize: 35,
+                            fontFamily: 'Mandorlato',
+                            fontWeight: FontWeight.bold)),
                     decoration: BoxDecoration(
                       color: primIceBlue,
-                      border: Border.all(width: 1,color: primBlue),
+                      border: Border.all(width: 1, color: primBlue),
                       borderRadius: BorderRadius.circular(20),
-                    )
-                ),
+                    )),
+                Container(
+                    child: TextField(
+                  decoration: InputDecoration(
+                    hintText: "Enter Password",
+                  ),
+                )),
                 FlatButton(
                   padding: EdgeInsets.all(0),
                   child: Container(
-                      width: double.infinity,
-                      padding: EdgeInsets.symmetric(vertical: 5),
+                      padding:
+                          EdgeInsets.symmetric(vertical: 5, horizontal: 15),
                       decoration: BoxDecoration(
                         color: primIceBlue,
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(width: 2.0, color: primBlue),
                       ),
-                      child: Text('LOGIN', style: TextStyle(fontSize: 15, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold), textAlign: TextAlign.center,)
-                  ),
-                  onPressed: () {
-
-                  },
-
+                      child: Text(
+                        'LOGIN',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: 'Mandorlato',
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.center,
+                      )),
+                  onPressed: () {},
                 ),
               ],
-            )
-        ),
+            )),
       ),
     );
   }
