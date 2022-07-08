@@ -46,10 +46,10 @@ class MyApp extends StatelessWidget {
                     )),
                 Container(
                     child: TextField(
-                  decoration: InputDecoration(
-                    hintText: "Enter Username",
-                  ),
-                )),
+                      decoration: InputDecoration(
+                        hintText: "Enter Username",
+                      ),
+                    )),
                 Container(
                     margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                     alignment: Alignment.center,
@@ -66,15 +66,15 @@ class MyApp extends StatelessWidget {
                     )),
                 Container(
                     child: TextField(
-                  decoration: InputDecoration(
-                    hintText: "Enter Password",
-                  ),
-                )),
+                      decoration: InputDecoration(
+                        hintText: "Enter Password",
+                      ),
+                    )),
                 FlatButton(
                   padding: EdgeInsets.all(0),
                   child: Container(
                       padding:
-                          EdgeInsets.symmetric(vertical: 5, horizontal: 15),
+                      EdgeInsets.symmetric(vertical: 5, horizontal: 15),
                       decoration: BoxDecoration(
                         color: primIceBlue,
                         borderRadius: BorderRadius.circular(10),
