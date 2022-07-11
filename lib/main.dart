@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
                       margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                       alignment: Alignment.center,
                       padding: EdgeInsets.all(2),
-                      child: Text('How many days are there in a week?',
+                      child: Text('The Lion is known as the king of the jungle?',
                           style: TextStyle(
                               fontSize: 10,
                               fontFamily: 'Mandorlato',
@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
                       margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                       alignment: Alignment.center,
                       padding: EdgeInsets.all(2),
-                      child: Text('How many days are there in a year?',
+                      child: Text('Name the National bird of India?',
                           style: TextStyle(
                               fontSize: 10,
                               fontFamily: 'Mandorlato',
@@ -78,7 +78,7 @@ class MyApp extends StatelessWidget {
                       margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                       alignment: Alignment.center,
                       padding: EdgeInsets.all(2),
-                      child: Text('Rainbow consist of how many colours?',
+                      child: Text('What is the National Anthem of India?',
                           style: TextStyle(
                               fontSize: 10,
                               fontFamily: 'Mandorlato',
@@ -98,7 +98,7 @@ class MyApp extends StatelessWidget {
                       margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                       alignment: Alignment.center,
                       padding: EdgeInsets.all(2),
-                      child: Text('Which animal is known as the Ship of the Desert ?',
+                      child: Text('What is the National song of India?',
                           style: TextStyle(
                               fontSize: 10,
                               fontFamily: 'Mandorlato',
