@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    child: Text('SIGN UP',
+                    child: Text('ASSESSMENT MODULE',
                         style: TextStyle(
                             fontSize: 20,
                             fontFamily: 'Mandorlato',
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
                       margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                       alignment: Alignment.center,
                       padding: EdgeInsets.all(2),
-                      child: Text('NAME',
+                      child: Text('How many days are there in a week?',
                           style: TextStyle(
                               fontSize: 10,
                               fontFamily: 'Mandorlato',
@@ -44,17 +44,19 @@ class MyApp extends StatelessWidget {
                         border: Border.all(width: 1, color: primBlue),
                         borderRadius: BorderRadius.circular(20),
                       )),
+
                   Container(
                       child: TextField(
                     decoration: InputDecoration(
-                      hintText: "Enter Name",
+                      hintText: "Type Here",
                     ),
                   )),
+
                   Container(
                       margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                       alignment: Alignment.center,
                       padding: EdgeInsets.all(2),
-                      child: Text('EMAIL ID',
+                      child: Text('How many days are there in a year?',
                           style: TextStyle(
                               fontSize: 10,
                               fontFamily: 'Mandorlato',
@@ -64,50 +66,11 @@ class MyApp extends StatelessWidget {
                         border: Border.all(width: 1, color: primBlue),
                         borderRadius: BorderRadius.circular(20),
                       )),
+
                   Container(
                       child: TextField(
                         decoration: InputDecoration(
-                          hintText: "Enter Email Id",
-                        ),
-                      )),
-                  Container(
-                      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.all(2),
-                      child: Text('ENROLLMENT NUMBER',
-                          style: TextStyle(
-                              fontSize: 10,
-                              fontFamily: 'Mandorlato',
-                              fontWeight: FontWeight.bold)),
-                      decoration: BoxDecoration(
-                        color: primIceBlue,
-                        border: Border.all(width: 1, color: primBlue),
-                        borderRadius: BorderRadius.circular(20),
-                      )),
-                  Container(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Enter Enrollment Number",
-                        ),
-                      )),
-                  Container(
-                      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.all(2),
-                      child: Text('BRANCH',
-                          style: TextStyle(
-                              fontSize: 10,
-                              fontFamily: 'Mandorlato',
-                              fontWeight: FontWeight.bold)),
-                      decoration: BoxDecoration(
-                        color: primIceBlue,
-                        border: Border.all(width: 1, color: primBlue),
-                        borderRadius: BorderRadius.circular(20),
-                      )),
-                  Container(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Enter Branch",
+                          hintText: "Type Here",
                         ),
                       )),
 
@@ -115,7 +78,7 @@ class MyApp extends StatelessWidget {
                       margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                       alignment: Alignment.center,
                       padding: EdgeInsets.all(2),
-                      child: Text('CONTACT NUMBER',
+                      child: Text('Rainbow consist of how many colours?',
                           style: TextStyle(
                               fontSize: 10,
                               fontFamily: 'Mandorlato',
@@ -128,7 +91,47 @@ class MyApp extends StatelessWidget {
                   Container(
                       child: TextField(
                         decoration: InputDecoration(
-                          hintText: "Enter Contact Number",
+                          hintText: "Type Here",
+                        ),
+                      )),
+                  Container(
+                      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                      alignment: Alignment.center,
+                      padding: EdgeInsets.all(2),
+                      child: Text('Which animal is known as the Ship of the Desert ?',
+                          style: TextStyle(
+                              fontSize: 10,
+                              fontFamily: 'Mandorlato',
+                              fontWeight: FontWeight.bold)),
+                      decoration: BoxDecoration(
+                        color: primIceBlue,
+                        border: Border.all(width: 1, color: primBlue),
+                        borderRadius: BorderRadius.circular(20),
+                      )),
+                  Container(
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: "Type Here",
+                        ),
+                      )),
+                  Container(
+                      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                      alignment: Alignment.center,
+                      padding: EdgeInsets.all(2),
+                      child: Text('Baby frog is known as.......',
+                          style: TextStyle(
+                              fontSize: 10,
+                              fontFamily: 'Mandorlato',
+                              fontWeight: FontWeight.bold)),
+                      decoration: BoxDecoration(
+                        color: primIceBlue,
+                        border: Border.all(width: 1, color: primBlue),
+                        borderRadius: BorderRadius.circular(20),
+                      )),
+                  Container(
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: "Type Here",
                         ),
                       )),
 
@@ -136,7 +139,7 @@ class MyApp extends StatelessWidget {
                       margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                       alignment: Alignment.center,
                       padding: EdgeInsets.all(2),
-                      child: Text('CREATE A PASSWORD',
+                      child: Text('How many consonants are there in the English alphabet?',
                           style: TextStyle(
                               fontSize: 10,
                               fontFamily: 'Mandorlato',
@@ -149,30 +152,10 @@ class MyApp extends StatelessWidget {
                   Container(
                       child: TextField(
                         decoration: InputDecoration(
-                          hintText: "Enter Password",
+                          hintText: "Type Here",
                         ),
                       )),
 
-                  Container(
-                      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.all(2),
-                      child: Text('CONFIRM PASSWORD',
-                          style: TextStyle(
-                              fontSize: 10,
-                              fontFamily: 'Mandorlato',
-                              fontWeight: FontWeight.bold)),
-                      decoration: BoxDecoration(
-                        color: primIceBlue,
-                        border: Border.all(width: 1, color: primBlue),
-                        borderRadius: BorderRadius.circular(20),
-                      )),
-                  Container(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Confirm Password",
-                        ),
-                      )),
 
                   FlatButton(
                     padding: EdgeInsets.all(1),
@@ -185,7 +168,7 @@ class MyApp extends StatelessWidget {
                           border: Border.all(width: 2.0, color: primBlue),
                         ),
                         child: Text(
-                          'SIGNUP',
+                          'SUBMIT',
                           style: TextStyle(
                               fontSize: 8,
                               fontFamily: 'Mandorlato',
