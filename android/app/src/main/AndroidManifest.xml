@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.stela_app">
    <application
-        android:label="stela_app"
+        android:label="STELA"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
