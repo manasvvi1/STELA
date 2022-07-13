@@ -64,14 +64,14 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: Mandorlato
-      fonts:
-        - asset: assets/fonts/Mandorlato-Bold.otf
-        - asset: assets/fonts/Mandorlato-ExtraBold.otf
-        - asset: assets/fonts/Mandorlato-ExtraLight.otf
-        - asset: assets/fonts/Mandorlato-Light.otf
-        - asset: assets/fonts/Mandorlato-Regular.otf
+#  fonts:
+#    - family: Mandorlato
+#      fonts:
+#        - asset: assets/fonts/Mandorlato-Bold.otf
+#        - asset: assets/fonts/Mandorlato-ExtraBold.otf
+#        - asset: assets/fonts/Mandorlato-ExtraLight.otf
+#        - asset: assets/fonts/Mandorlato-Light.otf
+#        - asset: assets/fonts/Mandorlato-Regular.otf
 #      style: italic
 #     - family: Trajan Pro
 #       fonts:
