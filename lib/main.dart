@@ -2,11 +2,14 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
+import 'package:stela_app/splash.dart';
 
 var expNum;
 
 void main() {
-  runApp(MyApp());
+  runApp(MaterialApp(
+    home: Splash(),
+  ));
 }
 
 class MyApp extends StatefulWidget {
