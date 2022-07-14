@@ -61,15 +61,15 @@ class MyApp extends StatelessWidget {
 
 
                 Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
-                    child: Text('For any Query or Suggestions you can contact us through E-mail.',
-                        style: TextStyle(
-                            fontSize: 35,
-                            fontFamily: 'Mandorlato',
-                            fontWeight: FontWeight.bold)),
-                   ),
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.all(2),
+                  child: Text('For any Query or Suggestions you can contact us through E-mail.',
+                      style: TextStyle(
+                          fontSize: 35,
+                          fontFamily: 'Mandorlato',
+                          fontWeight: FontWeight.bold)),
+                ),
 
                 FlatButton(
                   padding: EdgeInsets.all(0),
