@@ -68,7 +68,7 @@ class MyApp extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 35,
                             fontFamily: 'Mandorlato',
-                            fontWeight: FontWeight.bold)),
+                            )),
                    ),
 
                 FlatButton(
