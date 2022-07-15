@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-            backgroundColor: primPink,
+            backgroundColor: primaryWhite,
             body: SingleChildScrollView(
               child: Container(
                   margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
@@ -26,16 +26,23 @@ class MyApp extends StatelessWidget {
                     children: [
                       Container(
                           padding: EdgeInsets.all(10),
-                          child: Text('Experiment No.'+expNo[num], style: TextStyle(fontSize: 25, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold))
-                      ), // Heading
+                          child: Text('Experiment No.' + expNo[num],
+                              style: TextStyle(
+                                  fontSize: 25,
+                                  fontFamily: 'Mandorlato',
+                                  fontWeight: FontWeight.bold))), // Heading
                       Container(
                         padding: EdgeInsets.all(10),
                         width: double.infinity,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(50),
-                          color: primIceBlue,
+                          color: primaryButton,
                         ),
-                        child: Text('AIM', style: TextStyle(fontSize: 12, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
+                        child: Text('AIM',
+                            style: TextStyle(
+                                fontSize: 12,
+                                fontFamily: 'Mandorlato',
+                                fontWeight: FontWeight.bold)),
                       ), // AIM heading
                       Container(
                         padding: EdgeInsets.all(10),
@@ -57,10 +64,14 @@ class MyApp extends StatelessWidget {
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(50),
-                          color: primIceBlue,
+                          color: primaryButton,
                         ),
                         width: double.infinity,
-                        child: Text('PROCEDURE', style: TextStyle(fontSize: 12, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
+                        child: Text('PROCEDURE',
+                            style: TextStyle(
+                                fontSize: 12,
+                                fontFamily: 'Mandorlato',
+                                fontWeight: FontWeight.bold)),
                       ), // PROCEDURE heading
                       Container(
                         padding: EdgeInsets.all(10),
@@ -82,10 +93,14 @@ class MyApp extends StatelessWidget {
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(50),
-                          color: primIceBlue,
+                          color: primaryButton,
                         ),
                         width: double.infinity,
-                        child: Text('ALGORITHM', style: TextStyle(fontSize: 12, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
+                        child: Text('ALGORITHM',
+                            style: TextStyle(
+                                fontSize: 12,
+                                fontFamily: 'Mandorlato',
+                                fontWeight: FontWeight.bold)),
                       ), // ALGORITHM heading
                       Container(
                         padding: EdgeInsets.all(10),
@@ -107,10 +122,14 @@ class MyApp extends StatelessWidget {
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(50),
-                          color: primIceBlue,
+                          color: primaryButton,
                         ),
                         width: double.infinity,
-                        child: Text('PROGRAM', style: TextStyle(fontSize: 12, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
+                        child: Text('PROGRAM',
+                            style: TextStyle(
+                                fontSize: 12,
+                                fontFamily: 'Mandorlato',
+                                fontWeight: FontWeight.bold)),
                       ), // PROGRAM heading
                       Container(
                         padding: EdgeInsets.all(10),
@@ -132,10 +151,14 @@ class MyApp extends StatelessWidget {
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(50),
-                          color: primIceBlue,
+                          color: primaryButton,
                         ),
                         width: double.infinity,
-                        child: Text('RESULT', style: TextStyle(fontSize: 12, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold)),
+                        child: Text('RESULT',
+                            style: TextStyle(
+                                fontSize: 12,
+                                fontFamily: 'Mandorlato',
+                                fontWeight: FontWeight.bold)),
                       ), // RESULT heading
                       Container(
                         padding: EdgeInsets.all(10),
@@ -154,8 +177,7 @@ class MyApp extends StatelessWidget {
                         ),
                       ), // RESULT text
                     ],
-                  )
-              ),
+                  )),
             ),
             bottomNavigationBar: Container(
               padding: EdgeInsets.all(7),

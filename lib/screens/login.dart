@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: primPink,
+        backgroundColor: primaryWhite,
         body: Container(
             margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
             alignment: Alignment.center,
@@ -40,16 +40,16 @@ class MyApp extends StatelessWidget {
                             fontFamily: 'Mandorlato',
                             fontWeight: FontWeight.bold)),
                     decoration: BoxDecoration(
-                      color: primIceBlue,
-                      border: Border.all(width: 1, color: primBlue),
+                      color: primaryButton,
+                      border: Border.all(width: 1, color: primaryBar),
                       borderRadius: BorderRadius.circular(20),
                     )),
                 Container(
                     child: TextField(
-                      decoration: InputDecoration(
-                        hintText: "Enter Username",
-                      ),
-                    )),
+                  decoration: InputDecoration(
+                    hintText: "Enter Username",
+                  ),
+                )),
                 Container(
                     margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                     alignment: Alignment.center,
@@ -60,25 +60,25 @@ class MyApp extends StatelessWidget {
                             fontFamily: 'Mandorlato',
                             fontWeight: FontWeight.bold)),
                     decoration: BoxDecoration(
-                      color: primIceBlue,
-                      border: Border.all(width: 1, color: primBlue),
+                      color: primaryButton,
+                      border: Border.all(width: 1, color: primaryBar),
                       borderRadius: BorderRadius.circular(20),
                     )),
                 Container(
                     child: TextField(
-                      decoration: InputDecoration(
-                        hintText: "Enter Password",
-                      ),
-                    )),
+                  decoration: InputDecoration(
+                    hintText: "Enter Password",
+                  ),
+                )),
                 FlatButton(
                   padding: EdgeInsets.all(0),
                   child: Container(
                       padding:
-                      EdgeInsets.symmetric(vertical: 5, horizontal: 15),
+                          EdgeInsets.symmetric(vertical: 5, horizontal: 15),
                       decoration: BoxDecoration(
-                        color: primIceBlue,
+                        color: primaryButton,
                         borderRadius: BorderRadius.circular(10),
-                        border: Border.all(width: 2.0, color: primBlue),
+                        border: Border.all(width: 2.0, color: primaryBar),
                       ),
                       child: Text(
                         'LOGIN',
