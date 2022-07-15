@@ -2,12 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/constants/experimentDesc.dart';
+import 'package:stela_app/screens/experimentList.dart';
 import 'package:stela_app/screens/profile.dart';
 import 'package:stela_app/screens/subjects.dart';
-
-import 'analysisSubjects.dart';
-
-var num = 0;
+import 'package:stela_app/screens/analysisSubjects.dart';
 
 class Experiment extends StatelessWidget {
   @override
@@ -29,14 +27,14 @@ class Experiment extends StatelessWidget {
             ),
             body: SingleChildScrollView(
               child: Container(
-                  margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
+                  margin: EdgeInsets.symmetric(vertical: 30, horizontal: 10),
                   alignment: Alignment.center,
                   padding: EdgeInsets.all(10),
                   child: Column(
                     children: [
                       Container(
                           padding: EdgeInsets.all(10),
-                          child: Text('Experiment No.' + expNo[num],
+                          child: Text('Experiment No.' + expNo[expNum],
                               style: TextStyle(
                                   fontSize: 25,
                                   fontFamily: 'Mandorlato',
@@ -63,7 +61,7 @@ class Experiment extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Text(
-                                  aim[num],
+                                  aim[expNum],
                                 ),
                               ],
                             ),
@@ -92,7 +90,7 @@ class Experiment extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Text(
-                                  procedure[num],
+                                  procedure[expNum],
                                 ),
                               ],
                             ),
@@ -121,7 +119,7 @@ class Experiment extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Text(
-                                  algorithm[num],
+                                  algorithm[expNum],
                                 ),
                               ],
                             ),
@@ -150,7 +148,7 @@ class Experiment extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Text(
-                                  program[num],
+                                  program[expNum],
                                 ),
                               ],
                             ),
@@ -179,7 +177,7 @@ class Experiment extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Text(
-                                  result[num],
+                                  result[expNum],
                                 ),
                               ],
                             ),

@@ -28,9 +28,9 @@ class SignUp extends StatelessWidget {
               )),
         ),
         body: Container(
-            margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+            margin: EdgeInsets.symmetric(horizontal: 10),
             alignment: Alignment.center,
-            padding: EdgeInsets.all(10),
+            padding: EdgeInsets.symmetric(horizontal: 10),
             child: SingleChildScrollView(
               child: Column(
                 children: [
@@ -40,7 +40,7 @@ class SignUp extends StatelessWidget {
                             fontSize: 50,
                             fontFamily: 'Mandorlato',
                             fontWeight: FontWeight.bold)),
-                    margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
+                    margin: EdgeInsets.symmetric(vertical: 40, horizontal: 10),
                     alignment: Alignment.center,
                     padding: EdgeInsets.all(2),
                   ),
@@ -213,6 +213,9 @@ class SignUp extends StatelessWidget {
                       Navigator.push(context, MaterialPageRoute(builder: (context) => Subjects()),);
                     },
                   ),
+                  SizedBox(
+                    height: 40,
+                  )
                 ],
               ),
             )),

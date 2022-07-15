@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/screens/analysisSubjects.dart';
+import 'package:stela_app/screens/experimentList.dart';
 import 'package:stela_app/screens/profile.dart';
 
 class Subjects extends StatefulWidget {
@@ -74,7 +75,9 @@ class _SubjectsState extends State<Subjects> {
                                 color: primaryWhite))
                       ],
                     )),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => ExperimentList()),);
+                },
               ),
             ),
           ),

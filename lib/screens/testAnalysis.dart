@@ -14,7 +14,7 @@ class TestAnalysis extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-            backgroundColor: Color(0xffEDC7C7),
+            backgroundColor: primaryWhite,
             appBar: AppBar(
               title: Text('STELA'),
               backgroundColor: primaryBar,
@@ -29,7 +29,7 @@ class TestAnalysis extends StatelessWidget {
             ),
             body: Container(
                 height: 105,
-                margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
+                margin: EdgeInsets.symmetric(vertical: 40, horizontal: 10),
                 alignment: Alignment.center,
                 padding: EdgeInsets.all(10),
                 child: Column(

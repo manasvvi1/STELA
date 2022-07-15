@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/screens/profile.dart';
 import 'package:stela_app/screens/subjects.dart';
+import 'package:stela_app/screens/testAnalysis.dart';
 
 class AnalysisSubjects extends StatefulWidget {
   @override
@@ -84,7 +85,9 @@ class _AnalysisSubjectsState extends State<AnalysisSubjects> {
                                     color: primaryWhite))
                           ],
                         )),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => TestAnalysis()),);
+                    },
                   )
                 ],
               ),

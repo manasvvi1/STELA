@@ -22,7 +22,7 @@ class Login extends StatelessWidget {
               )),
         ),
         body: Container(
-            margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
+            margin: EdgeInsets.symmetric(vertical: 80, horizontal: 10),
             alignment: Alignment.center,
             padding: EdgeInsets.all(10),
             child: Column(
