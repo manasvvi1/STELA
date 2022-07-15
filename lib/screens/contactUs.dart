@@ -11,7 +11,9 @@ class ContactUs extends StatelessWidget {
           title: Text('STELA'),
           backgroundColor: primaryBar,
           leading: FlatButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+              },
               child: Icon(
                 Icons.arrow_back,
                 color: primaryWhite,

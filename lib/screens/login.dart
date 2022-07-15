@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
+import 'package:stela_app/screens/subjects.dart';
 
 class Login extends StatelessWidget {
   @override
@@ -8,6 +9,18 @@ class Login extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: primaryWhite,
+        appBar: AppBar(
+          title: Text('STELA'),
+          backgroundColor: primaryBar,
+          leading: FlatButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Icon(
+                Icons.arrow_back,
+                color: primaryWhite,
+              )),
+        ),
         body: Container(
             margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
             alignment: Alignment.center,
@@ -15,11 +28,15 @@ class Login extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  child: Text('LOGIN CREDENTIALS',
-                      style: TextStyle(
-                          fontSize: 50,
-                          fontFamily: 'Mandorlato',
-                          fontWeight: FontWeight.bold)),
+                  child: Text(
+                    'LOGIN CREDENTIALS',
+                    style: TextStyle(
+                      fontSize: 50,
+                      fontFamily: 'Mandorlato',
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
                   margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
                   alignment: Alignment.center,
                   padding: EdgeInsets.all(2),
@@ -30,7 +47,7 @@ class Login extends StatelessWidget {
                     padding: EdgeInsets.all(2),
                     child: Text('USERNAME',
                         style: TextStyle(
-                            fontSize: 35,
+                            fontSize: 25,
                             fontFamily: 'Mandorlato',
                             fontWeight: FontWeight.bold)),
                     decoration: BoxDecoration(
@@ -50,7 +67,7 @@ class Login extends StatelessWidget {
                     padding: EdgeInsets.all(2),
                     child: Text('PASSWORD',
                         style: TextStyle(
-                            fontSize: 35,
+                            fontSize: 25,
                             fontFamily: 'Mandorlato',
                             fontWeight: FontWeight.bold)),
                     decoration: BoxDecoration(
@@ -82,7 +99,9 @@ class Login extends StatelessWidget {
                             fontWeight: FontWeight.bold),
                         textAlign: TextAlign.center,
                       )),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Subjects()),);
+                  },
                 ),
               ],
             )),

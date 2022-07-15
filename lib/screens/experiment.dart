@@ -2,6 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/constants/experimentDesc.dart';
+import 'package:stela_app/screens/profile.dart';
+import 'package:stela_app/screens/subjects.dart';
+
+import 'analysisSubjects.dart';
 
 var num = 0;
 
@@ -11,6 +15,18 @@ class Experiment extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
             backgroundColor: primaryWhite,
+            appBar: AppBar(
+              title: Text('STELA'),
+              backgroundColor: primaryBar,
+              leading: FlatButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Icon(
+                    Icons.arrow_back,
+                    color: primaryWhite,
+                  )),
+            ),
             body: SingleChildScrollView(
               child: Container(
                   margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
@@ -174,27 +190,45 @@ class Experiment extends StatelessWidget {
                   )),
             ),
             bottomNavigationBar: Container(
+              color: primaryBar,
               padding: EdgeInsets.all(7),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: const <Widget>[
-                  Icon(
-                    Icons.home,
-                    color: Colors.black,
-                    size: 40,
+                children: [
+                  IconButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Subjects()),);
+                    },
+                    icon: Icon(
+                      Icons.home,
+                      color: primaryWhite,
+                      size: 40,
+                    ),
                   ),
-                  Icon(
-                    Icons.saved_search_rounded,
-                    color: Colors.black,
-                    size: 40,
+                  IconButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => AnalysisSubjects()),);
+                    },
+                    icon: Icon(
+                      Icons.saved_search_rounded,
+                      color: primaryWhite,
+                      size: 40,
+                    ),
                   ),
-                  Icon(
-                    Icons.account_circle,
-                    color: Colors.black,
-                    size: 40,
+                  IconButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()),);
+                    },
+                    icon: Icon(
+                      Icons.account_circle,
+                      color: primaryWhite,
+                      size: 40,
+                    ),
                   ),
                 ],
               ),
-            )));
+            ),
+        ),
+    );
   }
 }

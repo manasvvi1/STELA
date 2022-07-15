@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
+import 'package:stela_app/screens/login.dart';
+import 'package:stela_app/screens/signup.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -11,7 +13,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: primaryButton,
+        backgroundColor: primaryBar,
         body: SingleChildScrollView(
           child: Container(
             margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
@@ -19,19 +21,15 @@ class _HomeState extends State<Home> {
             padding: EdgeInsets.all(10),
             child: Column(
               children: [
-                Container(
-                    padding: EdgeInsets.all(10),
-                    child: Text('STELA',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 35,
-                            fontFamily: 'Mandorlato-ExtraBold',
-                            fontWeight: FontWeight.bold))),
+                SizedBox(
+                  height: 50,
+                ),
                 Container(
                   child: Column(
                     children: [
+                      Image.asset('assets/images/STELA.png'),
                       FlatButton(
-                        padding: EdgeInsets.all(70),
+                        padding: EdgeInsets.all(0),
                         child: Container(
                             width: double.infinity,
                             padding: EdgeInsets.symmetric(vertical: 5),
@@ -49,10 +47,12 @@ class _HomeState extends State<Home> {
                                   fontWeight: FontWeight.bold),
                               textAlign: TextAlign.center,
                             )),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Login()),);
+                        },
                       ),
                       FlatButton(
-                        padding: EdgeInsets.all(70),
+                        padding: EdgeInsets.all(0),
                         child: Container(
                             width: double.infinity,
                             padding: EdgeInsets.symmetric(vertical: 5),
@@ -70,7 +70,9 @@ class _HomeState extends State<Home> {
                                   fontWeight: FontWeight.bold),
                               textAlign: TextAlign.center,
                             )),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SignUp()),);
+                        },
                       ),
                     ],
                   ),
@@ -79,29 +81,6 @@ class _HomeState extends State<Home> {
             ),
           ),
         ),
-        /*bottomNavigationBar: Container(
-            padding: EdgeInsets.all(7),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const <Widget>[
-                Icon(
-                  Icons.home,
-                  color: Colors.black,
-                  size: 40,
-                ),
-                Icon(
-                  Icons.saved_search_rounded,
-                  color: Colors.black,
-                  size: 40,
-                ),
-                Icon(
-                  Icons.account_circle,
-                  color: Colors.black,
-                  size: 40,
-                ),
-              ],
-            ),
-          )*/
       ),
     );
   }

@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
+import 'package:stela_app/screens/subjects.dart';
 
 void main() {
   runApp(SignUp());
@@ -14,8 +15,20 @@ class SignUp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: primaryWhite,
+        appBar: AppBar(
+          title: Text('STELA'),
+          backgroundColor: primaryBar,
+          leading: FlatButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Icon(
+                Icons.arrow_back,
+                color: primaryWhite,
+              )),
+        ),
         body: Container(
-            margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
+            margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
             alignment: Alignment.center,
             padding: EdgeInsets.all(10),
             child: SingleChildScrollView(
@@ -24,7 +37,7 @@ class SignUp extends StatelessWidget {
                   Container(
                     child: Text('SIGN UP',
                         style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 50,
                             fontFamily: 'Mandorlato',
                             fontWeight: FontWeight.bold)),
                     margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
@@ -38,7 +51,7 @@ class SignUp extends StatelessWidget {
                       padding: EdgeInsets.all(2),
                       child: Text('NAME',
                           style: TextStyle(
-                              fontSize: 10,
+                              fontSize: 25,
                               fontFamily: 'Mandorlato',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
@@ -59,7 +72,7 @@ class SignUp extends StatelessWidget {
                       padding: EdgeInsets.all(2),
                       child: Text('EMAIL ID',
                           style: TextStyle(
-                              fontSize: 10,
+                              fontSize: 25,
                               fontFamily: 'Mandorlato',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
@@ -80,7 +93,7 @@ class SignUp extends StatelessWidget {
                       padding: EdgeInsets.all(2),
                       child: Text('ENROLLMENT NUMBER',
                           style: TextStyle(
-                              fontSize: 10,
+                              fontSize: 25,
                               fontFamily: 'Mandorlato',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
@@ -101,7 +114,7 @@ class SignUp extends StatelessWidget {
                       padding: EdgeInsets.all(2),
                       child: Text('BRANCH',
                           style: TextStyle(
-                              fontSize: 10,
+                              fontSize: 25,
                               fontFamily: 'Mandorlato',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
@@ -122,7 +135,7 @@ class SignUp extends StatelessWidget {
                       padding: EdgeInsets.all(2),
                       child: Text('CONTACT NUMBER',
                           style: TextStyle(
-                              fontSize: 10,
+                              fontSize: 25,
                               fontFamily: 'Mandorlato',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
@@ -141,9 +154,9 @@ class SignUp extends StatelessWidget {
                           EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                       alignment: Alignment.center,
                       padding: EdgeInsets.all(2),
-                      child: Text('CREATE A PASSWORD',
+                      child: Text('PASSWORD',
                           style: TextStyle(
-                              fontSize: 10,
+                              fontSize: 25,
                               fontFamily: 'Mandorlato',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
@@ -164,7 +177,7 @@ class SignUp extends StatelessWidget {
                       padding: EdgeInsets.all(2),
                       child: Text('CONFIRM PASSWORD',
                           style: TextStyle(
-                              fontSize: 10,
+                              fontSize: 25,
                               fontFamily: 'Mandorlato',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
@@ -191,12 +204,14 @@ class SignUp extends StatelessWidget {
                         child: Text(
                           'SIGNUP',
                           style: TextStyle(
-                              fontSize: 8,
+                              fontSize: 20,
                               fontFamily: 'Mandorlato',
                               fontWeight: FontWeight.bold),
                           textAlign: TextAlign.center,
                         )),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Subjects()),);
+                    },
                   ),
                 ],
               ),
