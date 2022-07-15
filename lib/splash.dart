@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/screens/home.dart';
 
-class Splash extends StatefulWidget {
-  const Splash({Key? key}) : super(key: key);
+class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
 
   @override
-  _SplashState createState() => _SplashState();
+  _MyAppState createState() => _MyAppState();
 }
 
-class _SplashState extends State<Splash> {
+class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
@@ -17,7 +16,7 @@ class _SplashState extends State<Splash> {
   }
 
   _navigateToHome() async {
-    await Future.delayed(Duration(milliseconds: 2500), () {});
+    await Future.delayed(Duration(milliseconds: 3000), () {});
     Navigator.pushReplacement(
         context, MaterialPageRoute(builder: (context) => Home()));
   }
@@ -31,7 +30,7 @@ class _SplashState extends State<Splash> {
       ),
       decoration: BoxDecoration(
           image: DecorationImage(
-        image: AssetImage('assets/images/Splash-Background.png'),
+        image: AssetImage('assets/images/MyApp-Background.png'),
         fit: BoxFit.cover,
       )),
     ));
