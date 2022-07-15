@@ -1,18 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 
-var expNum;
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatefulWidget {
+class Home extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _HomeState createState() => _HomeState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -55,12 +49,7 @@ class _MyAppState extends State<MyApp> {
                                   fontWeight: FontWeight.bold),
                               textAlign: TextAlign.center,
                             )),
-                        onPressed: () {
-                          setState(() {
-                            expNum = 0;
-                          });
-                          print(expNum);
-                        },
+                        onPressed: () {},
                       ),
                       FlatButton(
                         padding: EdgeInsets.all(70),
@@ -81,12 +70,7 @@ class _MyAppState extends State<MyApp> {
                                   fontWeight: FontWeight.bold),
                               textAlign: TextAlign.center,
                             )),
-                        onPressed: () {
-                          setState(() {
-                            expNum = 1;
-                          });
-                          print(expNum);
-                        },
+                        onPressed: () {},
                       ),
                     ],
                   ),

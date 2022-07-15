@@ -3,18 +3,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 
-var expNum;
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatefulWidget {
+class Subjects extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _SubjectsState createState() => _SubjectsState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _SubjectsState extends State<Subjects> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,12 +18,11 @@ class _MyAppState extends State<MyApp> {
             title: Text('STELA'),
             backgroundColor: primaryBar,
             leading: FlatButton(
-                onPressed: (){},
+                onPressed: () {},
                 child: Icon(
                   Icons.arrow_back,
                   color: primaryWhite,
-                )
-            ),
+                )),
           ),
           body: SingleChildScrollView(
             child: Container(
@@ -50,22 +43,35 @@ class _MyAppState extends State<MyApp> {
                       borderRadius: BorderRadius.all(
                         Radius.circular(10),
                       ),
-                      boxShadow: [BoxShadow(
-                        color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 5,
-                        blurRadius: 7,
-                        offset: Offset(0, 3), // changes position of shadow
-                      ),],
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 5,
+                          blurRadius: 7,
+                          offset: Offset(0, 3), // changes position of shadow
+                        ),
+                      ],
                     ),
                     child: Column(
                       children: [
-                        Text('Artificial Intelligence', style: TextStyle(fontSize: 25, fontFamily: 'Mandorlato', color: primaryWhite)),
-                        Text('M. Tech.', style: TextStyle(fontSize: 20, fontFamily: 'Mandorlato', color: primaryWhite)),
-                        Text('>>>', style: TextStyle(fontSize: 25, fontFamily: 'Mandorlato', color: primaryWhite))
+                        Text('Artificial Intelligence',
+                            style: TextStyle(
+                                fontSize: 25,
+                                fontFamily: 'Mandorlato',
+                                color: primaryWhite)),
+                        Text('M. Tech.',
+                            style: TextStyle(
+                                fontSize: 20,
+                                fontFamily: 'Mandorlato',
+                                color: primaryWhite)),
+                        Text('>>>',
+                            style: TextStyle(
+                                fontSize: 25,
+                                fontFamily: 'Mandorlato',
+                                color: primaryWhite))
                       ],
-                    )
-                ),
-                onPressed: (){},
+                    )),
+                onPressed: () {},
               ),
             ),
           ),
@@ -92,8 +98,7 @@ class _MyAppState extends State<MyApp> {
                 ),
               ],
             ),
-          )
-      ),
+          )),
     );
   }
 }

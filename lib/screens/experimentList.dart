@@ -5,16 +5,12 @@ import 'package:stela_app/constants/colors.dart';
 
 var expNum;
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatefulWidget {
+class ExperimentList extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _ExperimentListState createState() => _ExperimentListState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _ExperimentListState extends State<ExperimentList> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -29,8 +25,11 @@ class _MyAppState extends State<MyApp> {
                 children: [
                   Container(
                       padding: EdgeInsets.all(10),
-                      child: Text('Experiment List', style: TextStyle(fontSize: 25, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold))
-                  ),
+                      child: Text('Experiment List',
+                          style: TextStyle(
+                              fontSize: 25,
+                              fontFamily: 'Mandorlato',
+                              fontWeight: FontWeight.bold))),
                   Container(
                     child: Column(
                       children: [
@@ -42,17 +41,22 @@ class _MyAppState extends State<MyApp> {
                               decoration: BoxDecoration(
                                 color: primaryButton,
                                 borderRadius: BorderRadius.circular(10),
-                                border: Border.all(width: 2.0, color: primaryBar),
+                                border:
+                                    Border.all(width: 2.0, color: primaryBar),
                               ),
-                              child: Text('Experiment No. 1', style: TextStyle(fontSize: 15, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold, color: primaryWhite), textAlign: TextAlign.center)
-                          ),
+                              child: Text('Experiment No. 1',
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      fontFamily: 'Mandorlato',
+                                      fontWeight: FontWeight.bold,
+                                      color: primaryWhite),
+                                  textAlign: TextAlign.center)),
                           onPressed: () {
-                            setState((){
+                            setState(() {
                               expNum = 0;
                             });
                             print(expNum);
                           },
-
                         ),
                         FlatButton(
                           padding: EdgeInsets.all(0),
@@ -62,17 +66,22 @@ class _MyAppState extends State<MyApp> {
                               decoration: BoxDecoration(
                                 color: primaryButton,
                                 borderRadius: BorderRadius.circular(10),
-                                border: Border.all(width: 2.0, color: primaryBar),
+                                border:
+                                    Border.all(width: 2.0, color: primaryBar),
                               ),
-                              child: Text('Experiment No. 1', style: TextStyle(fontSize: 15, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold, color: primaryWhite), textAlign: TextAlign.center)
-                          ),
+                              child: Text('Experiment No. 1',
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      fontFamily: 'Mandorlato',
+                                      fontWeight: FontWeight.bold,
+                                      color: primaryWhite),
+                                  textAlign: TextAlign.center)),
                           onPressed: () {
-                            setState((){
+                            setState(() {
                               expNum = 0;
                             });
                             print(expNum);
                           },
-
                         ),
                         FlatButton(
                           padding: EdgeInsets.all(0),
@@ -82,17 +91,22 @@ class _MyAppState extends State<MyApp> {
                               decoration: BoxDecoration(
                                 color: primaryButton,
                                 borderRadius: BorderRadius.circular(10),
-                                border: Border.all(width: 2.0, color: primaryBar),
+                                border:
+                                    Border.all(width: 2.0, color: primaryBar),
                               ),
-                              child: Text('Experiment No. 1', style: TextStyle(fontSize: 15, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold, color: primaryWhite), textAlign: TextAlign.center)
-                          ),
+                              child: Text('Experiment No. 1',
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      fontFamily: 'Mandorlato',
+                                      fontWeight: FontWeight.bold,
+                                      color: primaryWhite),
+                                  textAlign: TextAlign.center)),
                           onPressed: () {
-                            setState((){
+                            setState(() {
                               expNum = 0;
                             });
                             print(expNum);
                           },
-
                         ),
                         FlatButton(
                           padding: EdgeInsets.all(0),
@@ -102,17 +116,22 @@ class _MyAppState extends State<MyApp> {
                               decoration: BoxDecoration(
                                 color: primaryButton,
                                 borderRadius: BorderRadius.circular(10),
-                                border: Border.all(width: 2.0, color: primaryBar),
+                                border:
+                                    Border.all(width: 2.0, color: primaryBar),
                               ),
-                              child: Text('Experiment No. 1', style: TextStyle(fontSize: 15, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold, color: primaryWhite), textAlign: TextAlign.center)
-                          ),
+                              child: Text('Experiment No. 1',
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      fontFamily: 'Mandorlato',
+                                      fontWeight: FontWeight.bold,
+                                      color: primaryWhite),
+                                  textAlign: TextAlign.center)),
                           onPressed: () {
-                            setState((){
+                            setState(() {
                               expNum = 0;
                             });
                             print(expNum);
                           },
-
                         ),
                         FlatButton(
                           padding: EdgeInsets.all(0),
@@ -122,17 +141,22 @@ class _MyAppState extends State<MyApp> {
                               decoration: BoxDecoration(
                                 color: primaryButton,
                                 borderRadius: BorderRadius.circular(10),
-                                border: Border.all(width: 2.0, color: primaryBar),
+                                border:
+                                    Border.all(width: 2.0, color: primaryBar),
                               ),
-                              child: Text('Experiment No. 1', style: TextStyle(fontSize: 15, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold, color: primaryWhite), textAlign: TextAlign.center)
-                          ),
+                              child: Text('Experiment No. 1',
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      fontFamily: 'Mandorlato',
+                                      fontWeight: FontWeight.bold,
+                                      color: primaryWhite),
+                                  textAlign: TextAlign.center)),
                           onPressed: () {
-                            setState((){
+                            setState(() {
                               expNum = 0;
                             });
                             print(expNum);
                           },
-
                         ),
                         FlatButton(
                           padding: EdgeInsets.all(0),
@@ -142,17 +166,22 @@ class _MyAppState extends State<MyApp> {
                               decoration: BoxDecoration(
                                 color: primaryButton,
                                 borderRadius: BorderRadius.circular(10),
-                                border: Border.all(width: 2.0, color: primaryBar),
+                                border:
+                                    Border.all(width: 2.0, color: primaryBar),
                               ),
-                              child: Text('Experiment No. 1', style: TextStyle(fontSize: 15, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold, color: primaryWhite), textAlign: TextAlign.center)
-                          ),
+                              child: Text('Experiment No. 1',
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      fontFamily: 'Mandorlato',
+                                      fontWeight: FontWeight.bold,
+                                      color: primaryWhite),
+                                  textAlign: TextAlign.center)),
                           onPressed: () {
-                            setState((){
+                            setState(() {
                               expNum = 0;
                             });
                             print(expNum);
                           },
-
                         ),
                         FlatButton(
                           padding: EdgeInsets.all(0),
@@ -162,17 +191,22 @@ class _MyAppState extends State<MyApp> {
                               decoration: BoxDecoration(
                                 color: primaryButton,
                                 borderRadius: BorderRadius.circular(10),
-                                border: Border.all(width: 2.0, color: primaryBar),
+                                border:
+                                    Border.all(width: 2.0, color: primaryBar),
                               ),
-                              child: Text('Experiment No. 1', style: TextStyle(fontSize: 15, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold, color: primaryWhite), textAlign: TextAlign.center)
-                          ),
+                              child: Text('Experiment No. 1',
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      fontFamily: 'Mandorlato',
+                                      fontWeight: FontWeight.bold,
+                                      color: primaryWhite),
+                                  textAlign: TextAlign.center)),
                           onPressed: () {
-                            setState((){
+                            setState(() {
                               expNum = 0;
                             });
                             print(expNum);
                           },
-
                         ),
                         FlatButton(
                           padding: EdgeInsets.all(0),
@@ -182,17 +216,22 @@ class _MyAppState extends State<MyApp> {
                               decoration: BoxDecoration(
                                 color: primaryButton,
                                 borderRadius: BorderRadius.circular(10),
-                                border: Border.all(width: 2.0, color: primaryBar),
+                                border:
+                                    Border.all(width: 2.0, color: primaryBar),
                               ),
-                              child: Text('Experiment No. 1', style: TextStyle(fontSize: 15, fontFamily: 'Mandorlato', fontWeight: FontWeight.bold, color: primaryWhite), textAlign: TextAlign.center)
-                          ),
+                              child: Text('Experiment No. 1',
+                                  style: TextStyle(
+                                      fontSize: 15,
+                                      fontFamily: 'Mandorlato',
+                                      fontWeight: FontWeight.bold,
+                                      color: primaryWhite),
+                                  textAlign: TextAlign.center)),
                           onPressed: () {
-                            setState((){
+                            setState(() {
                               expNum = 0;
                             });
                             print(expNum);
                           },
-
                         ),
                       ],
                     ),
@@ -224,8 +263,7 @@ class _MyAppState extends State<MyApp> {
                 ),
               ],
             ),
-          )
-      ),
+          )),
     );
   }
 }

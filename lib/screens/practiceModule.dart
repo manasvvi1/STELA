@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(PracticeModule());
 }
 
-class MyApp extends StatelessWidget {
+class PracticeModule extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
