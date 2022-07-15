@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/screens/analysisSubjects.dart';
+import 'package:stela_app/screens/contactUs.dart';
 import 'package:stela_app/screens/subjects.dart';
 
 class Profile extends StatefulWidget {
@@ -122,6 +123,27 @@ class _ProfileState extends State<Profile> {
                   alignment: Alignment.center,
                   padding: EdgeInsets.all(2),
                 ),
+                FlatButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => ContactUs()),);
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: primaryBar,
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(width: 2.0, color: primaryBar),
+                      ),
+                      child: Text('Contact Us',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontFamily: 'Mandorlato',
+                              fontWeight: FontWeight.bold)),
+                      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                      alignment: Alignment.center,
+                      padding: EdgeInsets.symmetric(vertical: 2, horizontal: 0),
+                    ),
+                )
               ]),
             )),
             bottomNavigationBar: Container(

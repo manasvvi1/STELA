@@ -2,7 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 
-class ContactUs extends StatelessWidget {
+class ContactUs extends StatefulWidget {
+  @override
+  _ContactUsState createState() => _ContactUsState();
+}
+
+class _ContactUsState extends State<ContactUs> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,7 +26,7 @@ class ContactUs extends StatelessWidget {
         ),
         backgroundColor: primaryWhite,
         body: Container(
-            margin: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
+            margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
             alignment: Alignment.center,
             padding: EdgeInsets.all(10),
             child: Column(
@@ -39,10 +44,10 @@ class ContactUs extends StatelessWidget {
                 Container(
                     margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                     alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
+                    padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
                     child: Text('FACING ISSUES IN THE APP ?',
                         style: TextStyle(
-                            fontSize: 35,
+                            fontSize: 25,
                             fontFamily: 'Mandorlato',
                             fontWeight: FontWeight.bold)),
                     decoration: BoxDecoration(
@@ -57,9 +62,8 @@ class ContactUs extends StatelessWidget {
                   child: Text(
                       'For any Query or Suggestions you can contact us through E-mail.',
                       style: TextStyle(
-                          fontSize: 35,
-                          fontFamily: 'Mandorlato',
-                          fontWeight: FontWeight.bold)),
+                          fontSize: 20,
+                          fontFamily: 'Mandorlato',)),
                 ),
                 FlatButton(
                   padding: EdgeInsets.all(0),
@@ -79,10 +83,39 @@ class ContactUs extends StatelessWidget {
                             fontWeight: FontWeight.bold),
                         textAlign: TextAlign.center,
                       )),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Feedback()),);
+                  },
                 ),
               ],
             )),
+      ),
+    );
+  }
+}
+
+class Feedback extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: primaryWhite,
+        appBar: AppBar(
+          title: Text('STELA'),
+          backgroundColor: primaryBar,
+          leading: FlatButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Icon(
+                Icons.arrow_back,
+                color: primaryWhite,
+              )),
+        ),
+        body: Container(
+          child: Text('Feeback Form'),
+        ),
       ),
     );
   }
