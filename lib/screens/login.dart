@@ -23,7 +23,7 @@ class Login extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: Container(
-              margin: EdgeInsets.symmetric(vertical: 80, horizontal: 10),
+              // margin: EdgeInsets.symmetric(vertical: 80, horizontal: 10),
               alignment: Alignment.center,
               padding: EdgeInsets.all(10),
               child: Column(
@@ -33,7 +33,7 @@ class Login extends StatelessWidget {
                       'LOGIN CREDENTIALS',
                       style: TextStyle(
                         fontSize: 50,
-                        fontFamily: 'Mandorlato',
+                        fontFamily: 'PTSerif',
                         fontWeight: FontWeight.bold,
                       ),
                       textAlign: TextAlign.center,
@@ -43,13 +43,14 @@ class Login extends StatelessWidget {
                     padding: EdgeInsets.all(2),
                   ),
                   Container(
-                      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                      margin:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                       alignment: Alignment.center,
                       padding: EdgeInsets.all(2),
                       child: Text('USERNAME',
                           style: TextStyle(
                               fontSize: 25,
-                              fontFamily: 'Mandorlato',
+                              fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
                         color: primaryButton,
@@ -63,13 +64,14 @@ class Login extends StatelessWidget {
                     ),
                   )),
                   Container(
-                      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                      margin:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                       alignment: Alignment.center,
                       padding: EdgeInsets.all(2),
                       child: Text('PASSWORD',
                           style: TextStyle(
                               fontSize: 25,
-                              fontFamily: 'Mandorlato',
+                              fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
                         color: primaryButton,
@@ -96,12 +98,15 @@ class Login extends StatelessWidget {
                           'LOGIN',
                           style: TextStyle(
                               fontSize: 20,
-                              fontFamily: 'Mandorlato',
+                              fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold),
                           textAlign: TextAlign.center,
                         )),
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Subjects()),);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Subjects()),
+                      );
                     },
                   ),
                 ],

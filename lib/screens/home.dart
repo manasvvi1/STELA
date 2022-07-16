@@ -43,12 +43,15 @@ class _HomeState extends State<Home> {
                               'LOG IN',
                               style: TextStyle(
                                   fontSize: 20,
-                                  fontFamily: 'Mandorlato-Bold',
+                                  fontFamily: 'PTSerif-Bold',
                                   fontWeight: FontWeight.bold),
                               textAlign: TextAlign.center,
                             )),
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => Login()),);
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Login()),
+                          );
                         },
                       ),
                       FlatButton(
@@ -66,12 +69,15 @@ class _HomeState extends State<Home> {
                               'SIGN UP',
                               style: TextStyle(
                                   fontSize: 20,
-                                  fontFamily: 'Mandorlato-Bold',
+                                  fontFamily: 'PTSerif-Bold',
                                   fontWeight: FontWeight.bold),
                               textAlign: TextAlign.center,
                             )),
                         onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => SignUp()),);
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => SignUp()),
+                          );
                         },
                       ),
                     ],

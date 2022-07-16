@@ -17,130 +17,165 @@ class _ModulesState extends State<Modules> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: primaryWhite,
-        appBar: AppBar(
-          title: Text('STELA'),
-          backgroundColor: primaryBar,
-          leading: FlatButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              child: Icon(
-                Icons.arrow_back,
-                color: primaryWhite,
-              )),
-        ),
-        body: SingleChildScrollView(
-          child: Container(
-              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-              alignment: Alignment.center,
-              padding: EdgeInsets.all(10),
-              child: Column(children: [
-                //Container(padding: EdgeInsets.all(10), child: Text('STELA', style: TextStyle(color: Colors.white, fontSize: 35, fontFamily: 'Mandorlato-ExtraBold', fontWeight: FontWeight.bold))),
-                Container(
-                  child: Column(
-                    children: [
-                      Container(
-                        width: 50,
-                        margin: EdgeInsets.all(30),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(150),
-                          child: Image(
-                            image: NetworkImage('https://www.tutorialkart.com/img/hummingbird.png'),
+          backgroundColor: primaryWhite,
+          appBar: AppBar(
+            title: Text('STELA'),
+            backgroundColor: primaryBar,
+            leading: FlatButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Icon(
+                  Icons.arrow_back,
+                  color: primaryWhite,
+                )),
+          ),
+          body: SingleChildScrollView(
+            child: Container(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                alignment: Alignment.center,
+                padding: EdgeInsets.all(10),
+                child: Column(children: [
+                  //Container(padding: EdgeInsets.all(10), child: Text('STELA', style: TextStyle(color: Colors.white, fontSize: 35, fontFamily: 'PTSerif-ExtraBold', fontWeight: FontWeight.bold))),
+                  Container(
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 50,
+                          margin: EdgeInsets.all(30),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(150),
+                            child: Image(
+                              image: NetworkImage(
+                                  'https://www.tutorialkart.com/img/hummingbird.png'),
+                            ),
                           ),
                         ),
-                      ),
-                      FlatButton(
-                        child: Container(
-                            width: double.infinity,
-                            padding: EdgeInsets.symmetric(vertical: 5),
-                            decoration: BoxDecoration(
-                              color: primaryBar,
-                              borderRadius: BorderRadius.circular(10),
-                              border: Border.all(width: 2.0, color: primaryButton),
-                            ),
-                            child: Text(
-                              'Learning Module',
-                              style: TextStyle(color: Colors.white, fontSize: 20, fontFamily: 'Mandorlato-Bold', fontWeight: FontWeight.bold),
-                              textAlign: TextAlign.center,
-                            )),
-                        onPressed: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => Experiment()),);
-                        },
-                      ),
-                      Container(
-                        child: Column(
-                          children: [
-                            Container(
-                              width: 50,
-                              margin: EdgeInsets.all(30),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(150),
-                                child: Image(
-                                  image: NetworkImage('https://www.tutorialkart.com/img/hummingbird.png'),
+                        FlatButton(
+                          child: Container(
+                              width: double.infinity,
+                              padding: EdgeInsets.symmetric(vertical: 5),
+                              decoration: BoxDecoration(
+                                color: primaryBar,
+                                borderRadius: BorderRadius.circular(10),
+                                border: Border.all(
+                                    width: 2.0, color: primaryButton),
+                              ),
+                              child: Text(
+                                'Learning Module',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontFamily: 'PTSerif-Bold',
+                                    fontWeight: FontWeight.bold),
+                                textAlign: TextAlign.center,
+                              )),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Experiment()),
+                            );
+                          },
+                        ),
+                        Container(
+                          child: Column(
+                            children: [
+                              Container(
+                                width: 50,
+                                margin: EdgeInsets.all(30),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(150),
+                                  child: Image(
+                                    image: NetworkImage(
+                                        'https://www.tutorialkart.com/img/hummingbird.png'),
+                                  ),
                                 ),
                               ),
-                            ),
-                            FlatButton(
-                              child: Container(
-                                  width: double.infinity,
-                                  padding: EdgeInsets.symmetric(vertical: 5),
-                                  decoration: BoxDecoration(
-                                    color: primaryBar,
-                                    borderRadius: BorderRadius.circular(10),
-                                    border: Border.all(width: 2.0, color: primaryButton),
-                                  ),
-                                  child: Text(
-                                    'Practice Module',
-                                    style: TextStyle(color: Colors.white, fontSize: 20, fontFamily: 'Mandorlato-Bold', fontWeight: FontWeight.bold),
-                                    textAlign: TextAlign.center,
-                                  )),
-                              onPressed: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => PracticeModule()),);
-                              },
-                            ),
-                            Container(
-                              child: Column(
-                                children: [
-                                  Container(
-                                    width: 50,
-                                    margin: EdgeInsets.all(30),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(150),
-                                      child: Image(
-                                        image: NetworkImage('https://www.tutorialkart.com/img/hummingbird.png'),
+                              FlatButton(
+                                child: Container(
+                                    width: double.infinity,
+                                    padding: EdgeInsets.symmetric(vertical: 5),
+                                    decoration: BoxDecoration(
+                                      color: primaryBar,
+                                      borderRadius: BorderRadius.circular(10),
+                                      border: Border.all(
+                                          width: 2.0, color: primaryButton),
+                                    ),
+                                    child: Text(
+                                      'Practice Module',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 20,
+                                          fontFamily: 'PTSerif-Bold',
+                                          fontWeight: FontWeight.bold),
+                                      textAlign: TextAlign.center,
+                                    )),
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => PracticeModule()),
+                                  );
+                                },
+                              ),
+                              Container(
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      width: 50,
+                                      margin: EdgeInsets.all(30),
+                                      child: ClipRRect(
+                                        borderRadius:
+                                            BorderRadius.circular(150),
+                                        child: Image(
+                                          image: NetworkImage(
+                                              'https://www.tutorialkart.com/img/hummingbird.png'),
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  FlatButton(
-                                    child: Container(
-                                        width: double.infinity,
-                                        padding: EdgeInsets.symmetric(vertical: 5),
-                                        decoration: BoxDecoration(
-                                          color: primaryBar,
-                                          borderRadius: BorderRadius.circular(10),
-                                          border: Border.all(width: 2.0, color: primaryButton),
-                                        ),
-                                        child: Text(
-                                          'Assessment',
-                                          style: TextStyle(color: Colors.white, fontSize: 20, fontFamily: 'Mandorlato-Bold', fontWeight: FontWeight.bold),
-                                          textAlign: TextAlign.center,
-                                        )),
-                                    onPressed: () {
-                                      Navigator.push(context, MaterialPageRoute(builder: (context) => AssessmentModule()),);
-                                    },
-                                  ),
-                                ],
+                                    FlatButton(
+                                      child: Container(
+                                          width: double.infinity,
+                                          padding:
+                                              EdgeInsets.symmetric(vertical: 5),
+                                          decoration: BoxDecoration(
+                                            color: primaryBar,
+                                            borderRadius:
+                                                BorderRadius.circular(10),
+                                            border: Border.all(
+                                                width: 2.0,
+                                                color: primaryButton),
+                                          ),
+                                          child: Text(
+                                            'Assessment',
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 20,
+                                                fontFamily: 'PTSerif-Bold',
+                                                fontWeight: FontWeight.bold),
+                                            textAlign: TextAlign.center,
+                                          )),
+                                      onPressed: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  AssessmentModule()),
+                                        );
+                                      },
+                                    ),
+                                  ],
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-              ])),
-        ),
+                ])),
+          ),
           bottomNavigationBar: Container(
             color: primaryBar,
             padding: EdgeInsets.all(7),
@@ -148,8 +183,11 @@ class _ModulesState extends State<Modules> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 IconButton(
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => Subjects()),);
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Subjects()),
+                    );
                   },
                   icon: Icon(
                     Icons.home,
@@ -158,8 +196,12 @@ class _ModulesState extends State<Modules> {
                   ),
                 ),
                 IconButton(
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => AnalysisSubjects()),);
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => AnalysisSubjects()),
+                    );
                   },
                   icon: Icon(
                     Icons.saved_search_rounded,
@@ -168,8 +210,11 @@ class _ModulesState extends State<Modules> {
                   ),
                 ),
                 IconButton(
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()),);
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Profile()),
+                    );
                   },
                   icon: Icon(
                     Icons.account_circle,

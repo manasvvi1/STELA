@@ -37,7 +37,7 @@ class TestAnalysis extends StatelessWidget {
                     Text('Test Analysis',
                         style: TextStyle(
                             fontSize: 25,
-                            fontFamily: 'Mandorlato',
+                            fontFamily: 'PTSerif',
                             fontWeight: FontWeight.bold)),
                   ],
                 )),
@@ -48,8 +48,11 @@ class TestAnalysis extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   IconButton(
-                    onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Subjects()),);
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Subjects()),
+                      );
                     },
                     icon: Icon(
                       Icons.home,
@@ -58,8 +61,12 @@ class TestAnalysis extends StatelessWidget {
                     ),
                   ),
                   IconButton(
-                    onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => AnalysisSubjects()),);
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => AnalysisSubjects()),
+                      );
                     },
                     icon: Icon(
                       Icons.saved_search_rounded,
@@ -68,8 +75,11 @@ class TestAnalysis extends StatelessWidget {
                     ),
                   ),
                   IconButton(
-                    onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()),);
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Profile()),
+                      );
                     },
                     icon: Icon(
                       Icons.account_circle,

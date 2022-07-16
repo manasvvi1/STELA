@@ -38,7 +38,7 @@ class SignUp extends StatelessWidget {
                     child: Text('SIGN UP',
                         style: TextStyle(
                             fontSize: 50,
-                            fontFamily: 'Mandorlato',
+                            fontFamily: 'PTSerif',
                             fontWeight: FontWeight.bold)),
                     margin: EdgeInsets.symmetric(vertical: 40, horizontal: 10),
                     alignment: Alignment.center,
@@ -52,7 +52,7 @@ class SignUp extends StatelessWidget {
                       child: Text('NAME',
                           style: TextStyle(
                               fontSize: 25,
-                              fontFamily: 'Mandorlato',
+                              fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
                         color: primaryButton,
@@ -73,7 +73,7 @@ class SignUp extends StatelessWidget {
                       child: Text('EMAIL ID',
                           style: TextStyle(
                               fontSize: 25,
-                              fontFamily: 'Mandorlato',
+                              fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
                         color: primaryButton,
@@ -94,7 +94,7 @@ class SignUp extends StatelessWidget {
                       child: Text('ENROLLMENT NUMBER',
                           style: TextStyle(
                               fontSize: 25,
-                              fontFamily: 'Mandorlato',
+                              fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
                         color: primaryButton,
@@ -115,7 +115,7 @@ class SignUp extends StatelessWidget {
                       child: Text('BRANCH',
                           style: TextStyle(
                               fontSize: 25,
-                              fontFamily: 'Mandorlato',
+                              fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
                         color: primaryButton,
@@ -136,7 +136,7 @@ class SignUp extends StatelessWidget {
                       child: Text('CONTACT NUMBER',
                           style: TextStyle(
                               fontSize: 25,
-                              fontFamily: 'Mandorlato',
+                              fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
                         color: primaryButton,
@@ -157,7 +157,7 @@ class SignUp extends StatelessWidget {
                       child: Text('PASSWORD',
                           style: TextStyle(
                               fontSize: 25,
-                              fontFamily: 'Mandorlato',
+                              fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
                         color: primaryButton,
@@ -178,7 +178,7 @@ class SignUp extends StatelessWidget {
                       child: Text('CONFIRM PASSWORD',
                           style: TextStyle(
                               fontSize: 25,
-                              fontFamily: 'Mandorlato',
+                              fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold)),
                       decoration: BoxDecoration(
                         color: primaryButton,
@@ -205,12 +205,15 @@ class SignUp extends StatelessWidget {
                           'SIGNUP',
                           style: TextStyle(
                               fontSize: 20,
-                              fontFamily: 'Mandorlato',
+                              fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold),
                           textAlign: TextAlign.center,
                         )),
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Subjects()),);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Subjects()),
+                      );
                     },
                   ),
                   SizedBox(

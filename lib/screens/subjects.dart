@@ -34,7 +34,6 @@ class _SubjectsState extends State<Subjects> {
               child: FlatButton(
                 padding: EdgeInsets.all(0),
                 child: Container(
-                    height: 110,
                     alignment: Alignment.center,
                     padding: EdgeInsets.all(10),
                     decoration: BoxDecoration(
@@ -61,22 +60,22 @@ class _SubjectsState extends State<Subjects> {
                         Text('Artificial Intelligence',
                             style: TextStyle(
                                 fontSize: 25,
-                                fontFamily: 'Mandorlato',
-                                color: primaryWhite)),
+                                fontFamily: 'PTSerif-Bold',)),
                         Text('M. Tech.',
                             style: TextStyle(
                                 fontSize: 20,
-                                fontFamily: 'Mandorlato',
-                                color: primaryWhite)),
+                                fontFamily: 'PTSerif',)),
                         Text('>>>',
                             style: TextStyle(
                                 fontSize: 25,
-                                fontFamily: 'Mandorlato',
-                                color: primaryWhite))
+                                fontFamily: 'PTSerif',))
                       ],
                     )),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => ExperimentList()),);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ExperimentList()),
+                  );
                 },
               ),
             ),
@@ -88,8 +87,11 @@ class _SubjectsState extends State<Subjects> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 IconButton(
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => Subjects()),);
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Subjects()),
+                    );
                   },
                   icon: Icon(
                     Icons.home,
@@ -98,8 +100,12 @@ class _SubjectsState extends State<Subjects> {
                   ),
                 ),
                 IconButton(
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => AnalysisSubjects()),);
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => AnalysisSubjects()),
+                    );
                   },
                   icon: Icon(
                     Icons.saved_search_rounded,
@@ -108,8 +114,11 @@ class _SubjectsState extends State<Subjects> {
                   ),
                 ),
                 IconButton(
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()),);
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Profile()),
+                    );
                   },
                   icon: Icon(
                     Icons.account_circle,

@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
       ),
       decoration: BoxDecoration(
           image: DecorationImage(
-        image: AssetImage('assets/images/MyApp-Background.png'),
+        image: AssetImage('assets/images/Splash-Background.png'),
         fit: BoxFit.cover,
       )),
     ));

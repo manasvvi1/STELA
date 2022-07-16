@@ -44,7 +44,7 @@ class _ExperimentListState extends State<ExperimentList> {
                       child: Text('Experiment List',
                           style: TextStyle(
                               fontSize: 25,
-                              fontFamily: 'Mandorlato',
+                              fontFamily: 'PTSerif-Bold',
                               fontWeight: FontWeight.bold))),
                   Container(
                     child: Column(
@@ -62,10 +62,9 @@ class _ExperimentListState extends State<ExperimentList> {
                               ),
                               child: Text('Experiment No. 1',
                                   style: TextStyle(
-                                      fontSize: 15,
-                                      fontFamily: 'Mandorlato',
-                                      fontWeight: FontWeight.bold,
-                                      color: primaryWhite),
+                                    fontSize: 20,
+                                    fontFamily: 'PTSerif',
+                                  ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
                             expNum = 0;
@@ -89,10 +88,9 @@ class _ExperimentListState extends State<ExperimentList> {
                               ),
                               child: Text('Experiment No. 2',
                                   style: TextStyle(
-                                      fontSize: 15,
-                                      fontFamily: 'Mandorlato',
-                                      fontWeight: FontWeight.bold,
-                                      color: primaryWhite),
+                                    fontSize: 20,
+                                    fontFamily: 'PTSerif',
+                                  ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
                             expNum = 1;
@@ -116,10 +114,9 @@ class _ExperimentListState extends State<ExperimentList> {
                               ),
                               child: Text('Experiment No. 3',
                                   style: TextStyle(
-                                      fontSize: 15,
-                                      fontFamily: 'Mandorlato',
-                                      fontWeight: FontWeight.bold,
-                                      color: primaryWhite),
+                                    fontSize: 20,
+                                    fontFamily: 'PTSerif',
+                                  ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
                             expNum = 2;
@@ -143,10 +140,9 @@ class _ExperimentListState extends State<ExperimentList> {
                               ),
                               child: Text('Experiment No. 4(a)',
                                   style: TextStyle(
-                                      fontSize: 15,
-                                      fontFamily: 'Mandorlato',
-                                      fontWeight: FontWeight.bold,
-                                      color: primaryWhite),
+                                    fontSize: 20,
+                                    fontFamily: 'PTSerif',
+                                  ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
                             expNum = 3;
@@ -170,10 +166,9 @@ class _ExperimentListState extends State<ExperimentList> {
                               ),
                               child: Text('Experiment No. 4(b)',
                                   style: TextStyle(
-                                      fontSize: 15,
-                                      fontFamily: 'Mandorlato',
-                                      fontWeight: FontWeight.bold,
-                                      color: primaryWhite),
+                                    fontSize: 20,
+                                    fontFamily: 'PTSerif',
+                                  ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
                             expNum = 4;
@@ -197,10 +192,9 @@ class _ExperimentListState extends State<ExperimentList> {
                               ),
                               child: Text('Experiment No. 5',
                                   style: TextStyle(
-                                      fontSize: 15,
-                                      fontFamily: 'Mandorlato',
-                                      fontWeight: FontWeight.bold,
-                                      color: primaryWhite),
+                                    fontSize: 20,
+                                    fontFamily: 'PTSerif',
+                                  ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
                             expNum = 5;
@@ -224,10 +218,9 @@ class _ExperimentListState extends State<ExperimentList> {
                               ),
                               child: Text('Experiment No. 6',
                                   style: TextStyle(
-                                      fontSize: 15,
-                                      fontFamily: 'Mandorlato',
-                                      fontWeight: FontWeight.bold,
-                                      color: primaryWhite),
+                                    fontSize: 20,
+                                    fontFamily: 'PTSerif',
+                                  ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
                             expNum = 6;
@@ -251,10 +244,9 @@ class _ExperimentListState extends State<ExperimentList> {
                               ),
                               child: Text('Experiment No. 7',
                                   style: TextStyle(
-                                      fontSize: 15,
-                                      fontFamily: 'Mandorlato',
-                                      fontWeight: FontWeight.bold,
-                                      color: primaryWhite),
+                                    fontSize: 20,
+                                    fontFamily: 'PTSerif',
+                                  ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
                             expNum = 7;
@@ -278,10 +270,9 @@ class _ExperimentListState extends State<ExperimentList> {
                               ),
                               child: Text('Experiment No. 8(a)',
                                   style: TextStyle(
-                                      fontSize: 15,
-                                      fontFamily: 'Mandorlato',
-                                      fontWeight: FontWeight.bold,
-                                      color: primaryWhite),
+                                    fontSize: 20,
+                                    fontFamily: 'PTSerif',
+                                  ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
                             expNum = 8;
@@ -305,10 +296,9 @@ class _ExperimentListState extends State<ExperimentList> {
                               ),
                               child: Text('Experiment No. 8(b)',
                                   style: TextStyle(
-                                      fontSize: 15,
-                                      fontFamily: 'Mandorlato',
-                                      fontWeight: FontWeight.bold,
-                                      color: primaryWhite),
+                                    fontSize: 20,
+                                    fontFamily: 'PTSerif',
+                                  ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
                             expNum = 9;
@@ -332,10 +322,9 @@ class _ExperimentListState extends State<ExperimentList> {
                               ),
                               child: Text('Experiment No. 9',
                                   style: TextStyle(
-                                      fontSize: 15,
-                                      fontFamily: 'Mandorlato',
-                                      fontWeight: FontWeight.bold,
-                                      color: primaryWhite),
+                                    fontSize: 20,
+                                    fontFamily: 'PTSerif',
+                                  ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
                             expNum = 10;
@@ -359,10 +348,9 @@ class _ExperimentListState extends State<ExperimentList> {
                               ),
                               child: Text('Experiment No. 10',
                                   style: TextStyle(
-                                      fontSize: 15,
-                                      fontFamily: 'Mandorlato',
-                                      fontWeight: FontWeight.bold,
-                                      color: primaryWhite),
+                                    fontSize: 20,
+                                    fontFamily: 'PTSerif',
+                                  ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
                             expNum = 11;

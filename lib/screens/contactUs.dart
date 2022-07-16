@@ -48,7 +48,7 @@ class _ContactUsState extends State<ContactUs> {
                     child: Text('FACING ISSUES IN THE APP ?',
                         style: TextStyle(
                             fontSize: 25,
-                            fontFamily: 'Mandorlato',
+                            fontFamily: 'PTSerif',
                             fontWeight: FontWeight.bold)),
                     decoration: BoxDecoration(
                       color: primaryButton,
@@ -62,8 +62,9 @@ class _ContactUsState extends State<ContactUs> {
                   child: Text(
                       'For any Query or Suggestions you can contact us through E-mail.',
                       style: TextStyle(
-                          fontSize: 20,
-                          fontFamily: 'Mandorlato',)),
+                        fontSize: 20,
+                        fontFamily: 'PTSerif',
+                      )),
                 ),
                 FlatButton(
                   padding: EdgeInsets.all(0),
@@ -79,12 +80,15 @@ class _ContactUsState extends State<ContactUs> {
                         'WRITE TO US',
                         style: TextStyle(
                             fontSize: 20,
-                            fontFamily: 'Mandorlato',
+                            fontFamily: 'PTSerif',
                             fontWeight: FontWeight.bold),
                         textAlign: TextAlign.center,
                       )),
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => Feedback()),);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Feedback()),
+                    );
                   },
                 ),
               ],
@@ -95,7 +99,6 @@ class _ContactUsState extends State<ContactUs> {
 }
 
 class Feedback extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

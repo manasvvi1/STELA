@@ -38,24 +38,22 @@ class PracticeModule extends StatelessWidget {
                     child: Text('PRACTICE MODULE',
                         style: TextStyle(
                             fontSize: 20,
-                            fontFamily: 'Mandorlato',
+                            fontFamily: 'PTSerif',
                             fontWeight: FontWeight.bold)),
                     margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
                     alignment: Alignment.center,
                     padding: EdgeInsets.all(2),
                   ),
                   Container(
-                      margin:
-                          EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.all(2),
-                      child: Text(
-                          'The Lion is known as the king of the jungle?',
-                          style: TextStyle(
-                              fontSize: 20,
-                              fontFamily: 'Mandorlato',
-                              fontWeight: FontWeight.bold)),
-                      ),
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    alignment: Alignment.center,
+                    padding: EdgeInsets.all(2),
+                    child: Text('The Lion is known as the king of the jungle?',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: 'PTSerif',
+                            fontWeight: FontWeight.bold)),
+                  ),
                   Container(
                       child: TextField(
                     decoration: InputDecoration(
@@ -63,16 +61,15 @@ class PracticeModule extends StatelessWidget {
                     ),
                   )),
                   Container(
-                      margin:
-                          EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.all(2),
-                      child: Text('Name the National bird of India?',
-                          style: TextStyle(
-                              fontSize: 20,
-                              fontFamily: 'Mandorlato',
-                              fontWeight: FontWeight.bold)),
-                      ),
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    alignment: Alignment.center,
+                    padding: EdgeInsets.all(2),
+                    child: Text('Name the National bird of India?',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: 'PTSerif',
+                            fontWeight: FontWeight.bold)),
+                  ),
                   Container(
                       child: TextField(
                     decoration: InputDecoration(
@@ -80,16 +77,15 @@ class PracticeModule extends StatelessWidget {
                     ),
                   )),
                   Container(
-                      margin:
-                          EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.all(2),
-                      child: Text('What is the National Anthem of India?',
-                          style: TextStyle(
-                              fontSize: 20,
-                              fontFamily: 'Mandorlato',
-                              fontWeight: FontWeight.bold)),
-                      ),
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    alignment: Alignment.center,
+                    padding: EdgeInsets.all(2),
+                    child: Text('What is the National Anthem of India?',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: 'PTSerif',
+                            fontWeight: FontWeight.bold)),
+                  ),
                   Container(
                       child: TextField(
                     decoration: InputDecoration(
@@ -97,16 +93,15 @@ class PracticeModule extends StatelessWidget {
                     ),
                   )),
                   Container(
-                      margin:
-                          EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.all(2),
-                      child: Text('What is the National song of India?',
-                          style: TextStyle(
-                              fontSize: 20,
-                              fontFamily: 'Mandorlato',
-                              fontWeight: FontWeight.bold)),
-                      ),
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    alignment: Alignment.center,
+                    padding: EdgeInsets.all(2),
+                    child: Text('What is the National song of India?',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: 'PTSerif',
+                            fontWeight: FontWeight.bold)),
+                  ),
                   Container(
                       child: TextField(
                     decoration: InputDecoration(
@@ -114,16 +109,15 @@ class PracticeModule extends StatelessWidget {
                     ),
                   )),
                   Container(
-                      margin:
-                          EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.all(2),
-                      child: Text('Baby frog is known as.......',
-                          style: TextStyle(
-                              fontSize: 20,
-                              fontFamily: 'Mandorlato',
-                              fontWeight: FontWeight.bold)),
-                      ),
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    alignment: Alignment.center,
+                    padding: EdgeInsets.all(2),
+                    child: Text('Baby frog is known as.......',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: 'PTSerif',
+                            fontWeight: FontWeight.bold)),
+                  ),
                   Container(
                       child: TextField(
                     decoration: InputDecoration(
@@ -131,17 +125,16 @@ class PracticeModule extends StatelessWidget {
                     ),
                   )),
                   Container(
-                      margin:
-                          EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.all(2),
-                      child: Text(
-                          'How many consonants are there in the English alphabet?',
-                          style: TextStyle(
-                              fontSize: 20,
-                              fontFamily: 'Mandorlato',
-                              fontWeight: FontWeight.bold)),
-                      ),
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    alignment: Alignment.center,
+                    padding: EdgeInsets.all(2),
+                    child: Text(
+                        'How many consonants are there in the English alphabet?',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: 'PTSerif',
+                            fontWeight: FontWeight.bold)),
+                  ),
                   Container(
                       child: TextField(
                     decoration: InputDecoration(
@@ -162,7 +155,7 @@ class PracticeModule extends StatelessWidget {
                           'SUBMIT',
                           style: TextStyle(
                               fontSize: 20,
-                              fontFamily: 'Mandorlato',
+                              fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold),
                           textAlign: TextAlign.center,
                         )),

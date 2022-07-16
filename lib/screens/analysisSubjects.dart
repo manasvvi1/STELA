@@ -38,7 +38,7 @@ class _AnalysisSubjectsState extends State<AnalysisSubjects> {
                       child: Text('Analysis',
                           style: TextStyle(
                               fontSize: 25,
-                              fontFamily: 'Mandorlato',
+                              fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold))),
                   FlatButton(
                     padding: EdgeInsets.all(0),
@@ -71,17 +71,17 @@ class _AnalysisSubjectsState extends State<AnalysisSubjects> {
                             Text('Artificial Intelligence',
                                 style: TextStyle(
                                     fontSize: 25,
-                                    fontFamily: 'Mandorlato',
+                                    fontFamily: 'PTSerif',
                                     color: primaryWhite)),
                             Text('M. Tech.',
                                 style: TextStyle(
                                     fontSize: 20,
-                                    fontFamily: 'Mandorlato',
+                                    fontFamily: 'PTSerif',
                                     color: primaryWhite)),
                             Text('>>>',
                                 style: TextStyle(
                                     fontSize: 25,
-                                    fontFamily: 'Mandorlato',
+                                    fontFamily: 'PTSerif',
                                     color: primaryWhite))
                           ],
                         )),
