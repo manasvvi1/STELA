@@ -22,7 +22,7 @@ class _ProfileState extends State<Profile> {
       appBar: AppBar(
         title: Text('STELA'),
         backgroundColor: primaryBar,
-        leading: FlatButton(
+        leading: TextButton(
             onPressed: () {
               Navigator.pop(context);
             },
@@ -123,7 +123,7 @@ class _ProfileState extends State<Profile> {
             alignment: Alignment.center,
             padding: EdgeInsets.all(2),
           ),
-          FlatButton(
+          TextButton(
             onPressed: () {
               Navigator.push(
                 context,

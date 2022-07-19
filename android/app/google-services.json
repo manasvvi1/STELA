@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "442670226877",
+    "project_id": "stela4-2f630",
+    "storage_bucket": "stela4-2f630.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442670226877:android:2c2a7b28368db9a3e746d4",
+        "android_client_info": {
+          "package_name": "com.example.stela_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442670226877-nrcdn90mihr6tk490u4bekqjrvruim39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxunCAVpeP6_W7Bu1_Bf4pasGB9OY2XtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442670226877-nrcdn90mihr6tk490u4bekqjrvruim39.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "442670226877-00ngn3t407sc1vkp5dt43uff5f21ncop.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.stelaApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

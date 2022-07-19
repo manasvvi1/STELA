@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/screens/analysisSubjects.dart';
@@ -19,7 +18,7 @@ class _SubjectsState extends State<Subjects> {
           appBar: AppBar(
             title: Text('STELA'),
             backgroundColor: primaryBar,
-            leading: FlatButton(
+            leading: TextButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
@@ -31,8 +30,7 @@ class _SubjectsState extends State<Subjects> {
           body: SingleChildScrollView(
             child: Container(
               margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-              child: FlatButton(
-                padding: EdgeInsets.all(0),
+              child: TextButton(
                 child: Container(
                     alignment: Alignment.center,
                     padding: EdgeInsets.all(10),
@@ -59,16 +57,19 @@ class _SubjectsState extends State<Subjects> {
                       children: [
                         Text('Artificial Intelligence',
                             style: TextStyle(
-                                fontSize: 25,
-                                fontFamily: 'PTSerif-Bold',)),
+                              fontSize: 25,
+                              fontFamily: 'PTSerif-Bold',
+                            )),
                         Text('M. Tech.',
                             style: TextStyle(
-                                fontSize: 20,
-                                fontFamily: 'PTSerif',)),
+                              fontSize: 20,
+                              fontFamily: 'PTSerif',
+                            )),
                         Text('>>>',
                             style: TextStyle(
-                                fontSize: 25,
-                                fontFamily: 'PTSerif',))
+                              fontSize: 25,
+                              fontFamily: 'PTSerif',
+                            ))
                       ],
                     )),
                 onPressed: () {

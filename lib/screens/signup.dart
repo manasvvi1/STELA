@@ -1,13 +1,6 @@
-import 'dart:math';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/screens/subjects.dart';
-
-void main() {
-  runApp(SignUp());
-}
 
 class SignUp extends StatelessWidget {
   @override
@@ -18,7 +11,7 @@ class SignUp extends StatelessWidget {
         appBar: AppBar(
           title: Text('STELA'),
           backgroundColor: primaryBar,
-          leading: FlatButton(
+          leading: TextButton(
               onPressed: () {
                 Navigator.pop(context);
               },
@@ -191,8 +184,7 @@ class SignUp extends StatelessWidget {
                       hintText: "Confirm Password",
                     ),
                   )),
-                  FlatButton(
-                    padding: EdgeInsets.all(1),
+                  TextButton(
                     child: Container(
                         padding:
                             EdgeInsets.symmetric(vertical: 15, horizontal: 15),

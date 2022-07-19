@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/screens/subjects.dart';
@@ -12,7 +11,7 @@ class Login extends StatelessWidget {
         appBar: AppBar(
           title: Text('STELA'),
           backgroundColor: primaryBar,
-          leading: FlatButton(
+          leading: TextButton(
               onPressed: () {
                 Navigator.pop(context);
               },
@@ -84,8 +83,7 @@ class Login extends StatelessWidget {
                       hintText: "Enter Password",
                     ),
                   )),
-                  FlatButton(
-                    padding: EdgeInsets.all(0),
+                  TextButton(
                     child: Container(
                         padding:
                             EdgeInsets.symmetric(vertical: 5, horizontal: 15),

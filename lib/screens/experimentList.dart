@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/screens/modules.dart';
@@ -23,7 +22,7 @@ class _ExperimentListState extends State<ExperimentList> {
           appBar: AppBar(
             title: Text('STELA'),
             backgroundColor: primaryBar,
-            leading: FlatButton(
+            leading: TextButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
@@ -49,8 +48,7 @@ class _ExperimentListState extends State<ExperimentList> {
                   Container(
                     child: Column(
                       children: [
-                        FlatButton(
-                          padding: EdgeInsets.all(0),
+                        TextButton(
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
@@ -75,8 +73,7 @@ class _ExperimentListState extends State<ExperimentList> {
                             );
                           },
                         ),
-                        FlatButton(
-                          padding: EdgeInsets.all(0),
+                        TextButton(
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
@@ -101,8 +98,7 @@ class _ExperimentListState extends State<ExperimentList> {
                             );
                           },
                         ),
-                        FlatButton(
-                          padding: EdgeInsets.all(0),
+                        TextButton(
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
@@ -127,8 +123,7 @@ class _ExperimentListState extends State<ExperimentList> {
                             );
                           },
                         ),
-                        FlatButton(
-                          padding: EdgeInsets.all(0),
+                        TextButton(
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
@@ -153,8 +148,7 @@ class _ExperimentListState extends State<ExperimentList> {
                             );
                           },
                         ),
-                        FlatButton(
-                          padding: EdgeInsets.all(0),
+                        TextButton(
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
@@ -179,8 +173,7 @@ class _ExperimentListState extends State<ExperimentList> {
                             );
                           },
                         ),
-                        FlatButton(
-                          padding: EdgeInsets.all(0),
+                        TextButton(
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
@@ -205,8 +198,7 @@ class _ExperimentListState extends State<ExperimentList> {
                             );
                           },
                         ),
-                        FlatButton(
-                          padding: EdgeInsets.all(0),
+                        TextButton(
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
@@ -231,8 +223,7 @@ class _ExperimentListState extends State<ExperimentList> {
                             );
                           },
                         ),
-                        FlatButton(
-                          padding: EdgeInsets.all(0),
+                        TextButton(
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
@@ -257,8 +248,7 @@ class _ExperimentListState extends State<ExperimentList> {
                             );
                           },
                         ),
-                        FlatButton(
-                          padding: EdgeInsets.all(0),
+                        TextButton(
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
@@ -283,8 +273,7 @@ class _ExperimentListState extends State<ExperimentList> {
                             );
                           },
                         ),
-                        FlatButton(
-                          padding: EdgeInsets.all(0),
+                        TextButton(
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
@@ -309,8 +298,7 @@ class _ExperimentListState extends State<ExperimentList> {
                             );
                           },
                         ),
-                        FlatButton(
-                          padding: EdgeInsets.all(0),
+                        TextButton(
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
@@ -335,8 +323,7 @@ class _ExperimentListState extends State<ExperimentList> {
                             );
                           },
                         ),
-                        FlatButton(
-                          padding: EdgeInsets.all(0),
+                        TextButton(
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 
@@ -122,8 +121,8 @@ class AssessmentModule extends StatelessWidget {
                       hintText: "Type Here",
                     ),
                   )),
-                  FlatButton(
-                    padding: EdgeInsets.all(1),
+                  TextButton(
+                    // padding: EdgeInsets.all(1),
                     child: Container(
                         padding:
                             EdgeInsets.symmetric(vertical: 15, horizontal: 15),

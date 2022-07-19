@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 
@@ -15,7 +14,7 @@ class _ContactUsState extends State<ContactUs> {
         appBar: AppBar(
           title: Text('STELA'),
           backgroundColor: primaryBar,
-          leading: FlatButton(
+          leading: TextButton(
               onPressed: () {
                 Navigator.pop(context);
               },
@@ -66,8 +65,8 @@ class _ContactUsState extends State<ContactUs> {
                         fontFamily: 'PTSerif',
                       )),
                 ),
-                FlatButton(
-                  padding: EdgeInsets.all(0),
+                TextButton(
+                  // padding: EdgeInsets.all(0),
                   child: Container(
                       padding:
                           EdgeInsets.symmetric(vertical: 5, horizontal: 15),
@@ -107,7 +106,7 @@ class Feedback extends StatelessWidget {
         appBar: AppBar(
           title: Text('STELA'),
           backgroundColor: primaryBar,
-          leading: FlatButton(
+          leading: TextButton(
               onPressed: () {
                 Navigator.pop(context);
               },

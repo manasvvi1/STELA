@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/screens/profile.dart';
@@ -19,7 +18,7 @@ class _AnalysisSubjectsState extends State<AnalysisSubjects> {
           appBar: AppBar(
             title: Text('STELA'),
             backgroundColor: primaryBar,
-            leading: FlatButton(
+            leading: TextButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
@@ -40,10 +39,10 @@ class _AnalysisSubjectsState extends State<AnalysisSubjects> {
                               fontSize: 25,
                               fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold))),
-                  FlatButton(
-                    padding: EdgeInsets.all(0),
+                  TextButton(
+                    // padding: EdgeInsets.all(0),
                     child: Container(
-                        height: 110,
+                        height: 120,
                         alignment: Alignment.center,
                         padding: EdgeInsets.all(10),
                         decoration: BoxDecoration(
@@ -86,7 +85,10 @@ class _AnalysisSubjectsState extends State<AnalysisSubjects> {
                           ],
                         )),
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => TestAnalysis()),);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => TestAnalysis()),
+                      );
                     },
                   )
                 ],
@@ -100,8 +102,11 @@ class _AnalysisSubjectsState extends State<AnalysisSubjects> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 IconButton(
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => Subjects()),);
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Subjects()),
+                    );
                   },
                   icon: Icon(
                     Icons.home,
@@ -110,8 +115,12 @@ class _AnalysisSubjectsState extends State<AnalysisSubjects> {
                   ),
                 ),
                 IconButton(
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => AnalysisSubjects()),);
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => AnalysisSubjects()),
+                    );
                   },
                   icon: Icon(
                     Icons.saved_search_rounded,
@@ -120,8 +129,11 @@ class _AnalysisSubjectsState extends State<AnalysisSubjects> {
                   ),
                 ),
                 IconButton(
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()),);
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Profile()),
+                    );
                   },
                   icon: Icon(
                     Icons.account_circle,

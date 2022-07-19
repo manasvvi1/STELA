@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/screens/analysisSubjects.dart';
@@ -18,7 +17,7 @@ class PracticeModule extends StatelessWidget {
         appBar: AppBar(
           title: Text('STELA'),
           backgroundColor: primaryBar,
-          leading: FlatButton(
+          leading: TextButton(
               onPressed: () {
                 Navigator.pop(context);
               },
@@ -141,8 +140,8 @@ class PracticeModule extends StatelessWidget {
                       hintText: "Type Here",
                     ),
                   )),
-                  FlatButton(
-                    padding: EdgeInsets.all(1),
+                  TextButton(
+                    // padding: EdgeInsets.all(1),
                     child: Container(
                         padding:
                             EdgeInsets.symmetric(vertical: 15, horizontal: 15),

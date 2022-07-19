@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>442670226877-00ngn3t407sc1vkp5dt43uff5f21ncop.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.442670226877-00ngn3t407sc1vkp5dt43uff5f21ncop</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDhD3lnL0xIpLEhVEGd3pYoIgNqxECVBV4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>442670226877</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.stelaApp</string>
+	<key>PROJECT_ID</key>
+	<string>stela4-2f630</string>
+	<key>STORAGE_BUCKET</key>
+	<string>stela4-2f630.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:442670226877:ios:515e099986b6e6bee746d4</string>
+</dict>
+</plist>

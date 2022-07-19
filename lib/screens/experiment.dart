@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/constants/experimentDesc.dart';
@@ -16,7 +15,7 @@ class Experiment extends StatelessWidget {
         appBar: AppBar(
           title: Text('STELA'),
           backgroundColor: primaryBar,
-          leading: FlatButton(
+          leading: TextButton(
               onPressed: () {
                 Navigator.pop(context);
               },

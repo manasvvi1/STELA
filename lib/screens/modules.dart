@@ -21,7 +21,7 @@ class _ModulesState extends State<Modules> {
           appBar: AppBar(
             title: Text('STELA'),
             backgroundColor: primaryBar,
-            leading: FlatButton(
+            leading: TextButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
@@ -51,7 +51,7 @@ class _ModulesState extends State<Modules> {
                             ),
                           ),
                         ),
-                        FlatButton(
+                        TextButton(
                           child: Container(
                               width: double.infinity,
                               padding: EdgeInsets.symmetric(vertical: 5),
@@ -92,7 +92,7 @@ class _ModulesState extends State<Modules> {
                                   ),
                                 ),
                               ),
-                              FlatButton(
+                              TextButton(
                                 child: Container(
                                     width: double.infinity,
                                     padding: EdgeInsets.symmetric(vertical: 5),
@@ -134,7 +134,7 @@ class _ModulesState extends State<Modules> {
                                         ),
                                       ),
                                     ),
-                                    FlatButton(
+                                    TextButton(
                                       child: Container(
                                           width: double.infinity,
                                           padding:

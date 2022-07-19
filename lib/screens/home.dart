@@ -28,8 +28,7 @@ class _HomeState extends State<Home> {
                   child: Column(
                     children: [
                       Image.asset('assets/images/STELA.png'),
-                      FlatButton(
-                        padding: EdgeInsets.all(0),
+                      TextButton(
                         child: Container(
                             width: double.infinity,
                             padding: EdgeInsets.symmetric(vertical: 5),
@@ -54,8 +53,7 @@ class _HomeState extends State<Home> {
                           );
                         },
                       ),
-                      FlatButton(
-                        padding: EdgeInsets.all(0),
+                      TextButton(
                         child: Container(
                             width: double.infinity,
                             padding: EdgeInsets.symmetric(vertical: 5),
