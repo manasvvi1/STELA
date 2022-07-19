@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/screens/subjects.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class SignUp extends StatelessWidget {
+  final _auth = FirebaseAuth.instance;
+
+  String name = "",
+      email = "",
+      enrollmentNo = "",
+      branch = "",
+      contactNum = "",
+      password = "";
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -54,6 +64,9 @@ class SignUp extends StatelessWidget {
                       )),
                   Container(
                       child: TextField(
+                    onChanged: (value) {
+                      name = value;
+                    },
                     decoration: InputDecoration(
                       hintText: "Enter Name",
                     ),
@@ -75,6 +88,10 @@ class SignUp extends StatelessWidget {
                       )),
                   Container(
                       child: TextField(
+                    keyboardType: TextInputType.emailAddress,
+                    onChanged: (value) {
+                      email = value;
+                    },
                     decoration: InputDecoration(
                       hintText: "Enter Email Id",
                     ),
@@ -96,6 +113,9 @@ class SignUp extends StatelessWidget {
                       )),
                   Container(
                       child: TextField(
+                    onChanged: (value) {
+                      enrollmentNo = value;
+                    },
                     decoration: InputDecoration(
                       hintText: "Enter Enrollment Number",
                     ),
@@ -117,6 +137,9 @@ class SignUp extends StatelessWidget {
                       )),
                   Container(
                       child: TextField(
+                    onChanged: (value) {
+                      branch = value;
+                    },
                     decoration: InputDecoration(
                       hintText: "Enter Branch",
                     ),
@@ -138,6 +161,9 @@ class SignUp extends StatelessWidget {
                       )),
                   Container(
                       child: TextField(
+                    onChanged: (value) {
+                      contactNum = value;
+                    },
                     decoration: InputDecoration(
                       hintText: "Enter Contact Number",
                     ),
@@ -159,6 +185,10 @@ class SignUp extends StatelessWidget {
                       )),
                   Container(
                       child: TextField(
+                    obscureText: true,
+                    onChanged: (value) {
+                      password = value;
+                    },
                     decoration: InputDecoration(
                       hintText: "Enter Password",
                     ),
@@ -180,6 +210,12 @@ class SignUp extends StatelessWidget {
                       )),
                   Container(
                       child: TextField(
+                    obscureText: true,
+                    onChanged: (value) {
+                      if (password != value) {
+                        print('Password doesnt match');
+                      }
+                    },
                     decoration: InputDecoration(
                       hintText: "Confirm Password",
                     ),
@@ -201,11 +237,20 @@ class SignUp extends StatelessWidget {
                               fontWeight: FontWeight.bold),
                           textAlign: TextAlign.center,
                         )),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => Subjects()),
-                      );
+                    onPressed: () async {
+                      try {
+                        final newUser =
+                            await _auth.createUserWithEmailAndPassword(
+                                email: email, password: password);
+                        if (newUser != null) {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Subjects()),
+                          );
+                        }
+                      } catch (e) {
+                        print(e);
+                      }
                     },
                   ),
                   SizedBox(

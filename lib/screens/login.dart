@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/screens/subjects.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Login extends StatelessWidget {
+  final _auth = FirebaseAuth.instance;
+
+  String email = "", password = "";
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -46,7 +51,7 @@ class Login extends StatelessWidget {
                           EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                       alignment: Alignment.center,
                       padding: EdgeInsets.all(2),
-                      child: Text('USERNAME',
+                      child: Text('EMAIL',
                           style: TextStyle(
                               fontSize: 25,
                               fontFamily: 'PTSerif',
@@ -58,8 +63,11 @@ class Login extends StatelessWidget {
                       )),
                   Container(
                       child: TextField(
+                    onChanged: (value) {
+                      email = value;
+                    },
                     decoration: InputDecoration(
-                      hintText: "Enter Username",
+                      hintText: "Enter Enrollment Number",
                     ),
                   )),
                   Container(
@@ -79,6 +87,10 @@ class Login extends StatelessWidget {
                       )),
                   Container(
                       child: TextField(
+                    obscureText: true,
+                    onChanged: (value) {
+                      password = value;
+                    },
                     decoration: InputDecoration(
                       hintText: "Enter Password",
                     ),
@@ -100,11 +112,19 @@ class Login extends StatelessWidget {
                               fontWeight: FontWeight.bold),
                           textAlign: TextAlign.center,
                         )),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => Subjects()),
-                      );
+                    onPressed: () async {
+                      try {
+                        final signUser = await _auth.signInWithEmailAndPassword(
+                            email: email, password: password);
+                        if (signUser != null) {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Subjects()),
+                          );
+                        }
+                      } catch (e) {
+                        print(e);
+                      }
                     },
                   ),
                 ],
