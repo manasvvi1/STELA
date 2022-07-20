@@ -7,118 +7,241 @@ class ContactUs extends StatefulWidget {
 }
 
 class _ContactUsState extends State<ContactUs> {
+  var child;
+
+  var children;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('STELA'),
-          backgroundColor: primaryBar,
-          leading: TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              child: Icon(
-                Icons.arrow_back,
-                color: primaryWhite,
-              )),
-        ),
-        backgroundColor: primaryWhite,
-        body: Container(
-            margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
-            alignment: Alignment.center,
-            padding: EdgeInsets.all(10),
-            child: Column(
-              children: [
-                Container(
-                  child: Text('CONTACT US',
-                      style: TextStyle(
-                          fontSize: 50,
-                          fontFamily: 'Times New Roman',
-                          fontWeight: FontWeight.bold)),
-                  margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
-                  alignment: Alignment.center,
-                  padding: EdgeInsets.all(2),
-                ),
-                Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-                    child: Text('FACING ISSUES IN THE APP ?',
-                        style: TextStyle(
-                            fontSize: 25,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                    decoration: BoxDecoration(
-                      color: primaryButton,
-                      border: Border.all(width: 1, color: primaryBar),
-                      borderRadius: BorderRadius.circular(20),
-                    )),
-                Container(
-                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                  alignment: Alignment.center,
-                  padding: EdgeInsets.all(2),
-                  child: Text(
-                      'For any Query or Suggestions you can contact us through E-mail.',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontFamily: 'PTSerif',
-                      )),
-                ),
-                TextButton(
-                  // padding: EdgeInsets.all(0),
-                  child: Container(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 5, horizontal: 15),
-                      decoration: BoxDecoration(
-                        color: primaryButton,
-                        borderRadius: BorderRadius.circular(10),
-                        border: Border.all(width: 2.0, color: primaryBar),
-                      ),
-                      child: Text(
-                        'WRITE TO US',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold),
-                        textAlign: TextAlign.center,
-                      )),
+        home: Scaffold(
+            backgroundColor: primaryWhite,
+            bottomNavigationBar: BottomAppBar(
+              color: primaryBar,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                    'Note: Please mention the following details in your e-mail - Registered Email ID, Name, Roll No., Branch and Year of Admission.',
+                    style: TextStyle(color: primaryWhite, fontSize: 15)),
+              ),
+              elevation: 0,
+            ),
+            appBar: AppBar(
+              title: Text('STELA'),
+              backgroundColor: primaryBar,
+              leading: TextButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Feedback()),
-                    );
+                    Navigator.pop(context);
                   },
-                ),
-              ],
-            )),
-      ),
-    );
+                  child: Icon(
+                    Icons.arrow_back,
+                    color: primaryWhite,
+                  )),
+            ),
+            body: Center(
+              child: Container(
+                  child: Container(
+                      margin:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                      alignment: Alignment.center,
+                      padding: EdgeInsets.all(10),
+                      child: Column(children: <Widget>[
+                        Icon(
+                          Icons.contact_support_outlined,
+                          color: primaryButton,
+                          size: 100,
+                        ),
+                        Text('CONTACT US',
+                            style: TextStyle(
+                                color: primaryButton,
+                                fontSize: 30,
+                                fontFamily: 'PTSerif',
+                                fontWeight: FontWeight.bold)),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: primaryWhite,
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(width: 2.0, color: primaryWhite),
+                          ),
+                          child: Text('Facing Issues in the App ?',
+                              style: TextStyle(
+                                  color: primaryBar,
+                                  fontSize: 20,
+                                  fontFamily: 'PTSerif',
+                                  fontWeight: FontWeight.bold)),
+                          margin: EdgeInsets.symmetric(
+                              vertical: 10, horizontal: 10),
+                          alignment: Alignment.center,
+                          padding: EdgeInsets.all(2),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: primaryBar,
+                            borderRadius: BorderRadius.circular(10),
+                            border:
+                                Border.all(width: 2.0, color: primaryButton),
+                          ),
+                          child: new InkWell(
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: new Text('Mail Us',
+                                    style: TextStyle(
+                                        color: primaryWhite, fontSize: 20)),
+                              ),
+                              onTap: () => launch('stela4.0igdtuw@gmail.com')),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: primaryWhite,
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(width: 2.0, color: primaryWhite),
+                          ),
+                          child: Text(
+                            'To clear your queries,\ncontact us through mail.',
+                            style: TextStyle(
+                                color: primaryBar,
+                                fontSize: 20,
+                                fontFamily: 'PTSerif',
+                                fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center,
+                          ),
+                          margin: EdgeInsets.symmetric(
+                              vertical: 10, horizontal: 10),
+                          alignment: Alignment.center,
+                          padding: EdgeInsets.all(2),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: primaryBar,
+                            borderRadius: BorderRadius.circular(10),
+                            border:
+                                Border.all(width: 2.0, color: primaryButton),
+                          ),
+                          child: TextButton(
+                            child: new Text('Feedback',
+                                style: TextStyle(
+                                    color: primaryWhite, fontSize: 20)),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Feedback()));
+                            },
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: primaryWhite,
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(width: 2.0, color: primaryWhite),
+                          ),
+                          child: Text(
+                            'Your valuable feedback is important for improvement.',
+                            style: TextStyle(
+                                color: primaryBar,
+                                fontSize: 20,
+                                fontFamily: 'PTSerif',
+                                fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center,
+                          ),
+                          margin: EdgeInsets.symmetric(
+                              vertical: 10, horizontal: 10),
+                          alignment: Alignment.center,
+                          padding: EdgeInsets.all(2),
+                        ),
+                      ]))),
+            )));
   }
 }
 
-class Feedback extends StatelessWidget {
+launch(String s) {}
+
+class Feedback extends StatefulWidget {
+  @override
+  _FeedbackState createState() => _FeedbackState();
+}
+
+class _FeedbackState extends State<Feedback> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        backgroundColor: primaryWhite,
-        appBar: AppBar(
-          title: Text('STELA'),
-          backgroundColor: primaryBar,
-          leading: TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              child: Icon(
-                Icons.arrow_back,
-                color: primaryWhite,
-              )),
-        ),
-        body: Container(
-          child: Text('Feeback Form'),
-        ),
-      ),
-    );
+        home: Scaffold(
+            backgroundColor: primaryWhite,
+            bottomNavigationBar: BottomAppBar(
+              color: primaryBar,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                    'Note: Please mention the following details in your e-mail - Registered Email ID, Name, Roll No., Branch and Year of Admission.',
+                    style: TextStyle(color: primaryWhite, fontSize: 15)),
+              ),
+              elevation: 0,
+            ),
+            appBar: AppBar(
+              title: Text('STELA'),
+              backgroundColor: primaryBar,
+              leading: TextButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Icon(
+                    Icons.arrow_back,
+                    color: primaryWhite,
+                  )),
+            ),
+            body: Container(
+                child: Container(
+                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    alignment: Alignment.center,
+                    padding: EdgeInsets.all(10),
+                    child: Column(children: <Widget>[
+                      Icon(
+                        Icons.feedback_outlined,
+                        color: primaryButton,
+                        size: 100,
+                      ),
+                      Text('--------------------',
+                          style: TextStyle(
+                              color: primaryButton,
+                              fontSize: 30,
+                              fontFamily: 'PTSerif',
+                              fontWeight: FontWeight.bold)),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: primaryBar,
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(width: 2.0, color: primaryButton),
+                        ),
+                        child: new InkWell(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: new Text('FEEDBACK',
+                                  style: TextStyle(
+                                      color: primaryWhite, fontSize: 20)),
+                            ),
+                            onTap: () =>
+                                launch('https://forms.gle/96gMetTCcbgK3rkJ8')),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: primaryWhite,
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(width: 2.0, color: primaryWhite),
+                        ),
+                        child: Text(
+                          'Your valuable feedback is important for improvement.',
+                          style: TextStyle(
+                              color: primaryBar,
+                              fontSize: 20,
+                              fontFamily: 'PTSerif',
+                              fontWeight: FontWeight.bold),
+                          textAlign: TextAlign.center,
+                        ),
+                        margin:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                        alignment: Alignment.center,
+                        padding: EdgeInsets.all(2),
+                      ),
+                    ])))));
   }
 }
