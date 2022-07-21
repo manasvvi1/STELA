@@ -3,6 +3,7 @@ import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/screens/analysisSubjects.dart';
 import 'package:stela_app/screens/contactUs.dart';
 import 'package:stela_app/screens/subjects.dart';
+import 'package:stela_app/constants/userDetails.dart';
 
 class Profile extends StatefulWidget {
   @override
@@ -11,7 +12,6 @@ class Profile extends StatefulWidget {
 
 class _ProfileState extends State<Profile> {
   var child;
-
   var children;
 
   @override
@@ -42,7 +42,7 @@ class _ProfileState extends State<Profile> {
             color: primaryButton,
             size: 200,
           ),
-          Text('User Name',
+          Text(name,
               style: TextStyle(
                   color: primaryButton,
                   fontSize: 20,
@@ -65,7 +65,7 @@ class _ProfileState extends State<Profile> {
               borderRadius: BorderRadius.circular(10),
               border: Border.all(width: 2.0, color: primaryBar),
             ),
-            child: Text('Course and Year',
+            child: Text('Course and Year : ' + branch,
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -81,7 +81,7 @@ class _ProfileState extends State<Profile> {
               borderRadius: BorderRadius.circular(10),
               border: Border.all(width: 2.0, color: primaryBar),
             ),
-            child: Text('Assessments taken',
+            child: Text('Enrollment Number : ' + enrollmentNo,
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -97,7 +97,7 @@ class _ProfileState extends State<Profile> {
               borderRadius: BorderRadius.circular(10),
               border: Border.all(width: 2.0, color: primaryBar),
             ),
-            child: Text('Analysis',
+            child: Text('Email ID : ' + email,
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -113,7 +113,7 @@ class _ProfileState extends State<Profile> {
               borderRadius: BorderRadius.circular(10),
               border: Border.all(width: 2.0, color: primaryBar),
             ),
-            child: Text('Level',
+            child: Text('Contact Number : ' + contactNum,
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,

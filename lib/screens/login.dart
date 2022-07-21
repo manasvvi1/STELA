@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
+import 'package:stela_app/constants/userDetails.dart';
 import 'package:stela_app/screens/subjects.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -116,6 +117,8 @@ class Login extends StatelessWidget {
                       try {
                         final signUser = await _auth.signInWithEmailAndPassword(
                             email: email, password: password);
+                        userUID = FirebaseAuth.instance.currentUser?.uid;
+                        getDetails();
                         if (signUser != null) {
                           Navigator.push(
                             context,

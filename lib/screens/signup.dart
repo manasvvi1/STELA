@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
+import 'package:stela_app/constants/userDetails.dart';
 import 'package:stela_app/screens/subjects.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class SignUp extends StatelessWidget {
   final _auth = FirebaseAuth.instance;
-
-  String name = "",
-      email = "",
-      enrollmentNo = "",
-      branch = "",
-      contactNum = "",
-      password = "";
 
   @override
   Widget build(BuildContext context) {
@@ -125,7 +121,7 @@ class SignUp extends StatelessWidget {
                           EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                       alignment: Alignment.center,
                       padding: EdgeInsets.all(2),
-                      child: Text('BRANCH',
+                      child: Text('COURSE AND BRANCH',
                           style: TextStyle(
                               fontSize: 25,
                               fontFamily: 'PTSerif',
@@ -141,7 +137,7 @@ class SignUp extends StatelessWidget {
                       branch = value;
                     },
                     decoration: InputDecoration(
-                      hintText: "Enter Branch",
+                      hintText: "Enter Course and Branch",
                     ),
                   )),
                   Container(
@@ -212,9 +208,7 @@ class SignUp extends StatelessWidget {
                       child: TextField(
                     obscureText: true,
                     onChanged: (value) {
-                      if (password != value) {
-                        print('Password doesnt match');
-                      }
+                      confirmPassword = value;
                     },
                     decoration: InputDecoration(
                       hintText: "Confirm Password",
@@ -238,18 +232,36 @@ class SignUp extends StatelessWidget {
                           textAlign: TextAlign.center,
                         )),
                     onPressed: () async {
-                      try {
-                        final newUser =
-                            await _auth.createUserWithEmailAndPassword(
-                                email: email, password: password);
-                        if (newUser != null) {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => Subjects()),
-                          );
+                      if (password == confirmPassword) {
+                        try {
+                          final newUser =
+                              await _auth.createUserWithEmailAndPassword(
+                                  email: email, password: password);
+
+                          final userUID =
+                              FirebaseAuth.instance.currentUser?.uid;
+
+                          FirebaseFirestore.instance
+                              .collection('students')
+                              .doc(userUID)
+                              .set({
+                            'name': name,
+                            'contactNumber': contactNum,
+                            'emailAddress': email,
+                            'enrollmentNumber': enrollmentNo,
+                            'courseAndBranch': branch,
+                            'password': password
+                          });
+                          if (newUser != null) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Subjects()),
+                            );
+                          }
+                        } catch (e) {
+                          print(e);
                         }
-                      } catch (e) {
-                        print(e);
                       }
                     },
                   ),
