@@ -200,7 +200,7 @@ class SignUp extends StatelessWidget {
                             'contactNumber': contactNum,
                             'emailAddress': email,
                             'enrollmentNumber': enrollmentNo,
-                            'password': password
+                            'password': password,
                           });
                           if (newUser != null) {
                             Navigator.push(

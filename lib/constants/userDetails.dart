@@ -9,7 +9,7 @@ String name = "",
     password = "",
     confirmPassword = "";
 
-Map<String, dynamic>? data;
+Map<String, dynamic>? data, document;
 var userDetails;
 
 void getDetails() async {
@@ -24,4 +24,14 @@ void getDetails() async {
   email = data?['emailAddress'];
   enrollmentNo = data?['enrollmentNumber'];
   contactNum = data?['contactNumber'];
+  getAssessmentLink();
+}
+
+void getAssessmentLink() async {
+  final assesmentLinks = await FirebaseFirestore.instance
+      .collection('assessments')
+      .doc('Assessments')
+      .get(); //gets user
+
+  document = assesmentLinks.data();
 }

@@ -1,150 +1,168 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:stela_app/constants/experimentDesc.dart';
+import 'package:stela_app/screens/experimentList.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:stela_app/constants/userDetails.dart';
 
-class AssessmentModule extends StatelessWidget {
+class AssessmentModule extends StatefulWidget {
+  @override
+  State<AssessmentModule> createState() => _AssessmentModuleState();
+}
+
+class _AssessmentModuleState extends State<AssessmentModule> {
+  final GlobalKey webViewKey = GlobalKey();
+
+  InAppWebViewController? webViewController;
+  var link = document?["Assessment " + expNo[expNum]];
+
+  InAppWebViewGroupOptions options = InAppWebViewGroupOptions(
+      crossPlatform: InAppWebViewOptions(
+        useShouldOverrideUrlLoading: true,
+        mediaPlaybackRequiresUserGesture: false,
+      ),
+      android: AndroidInAppWebViewOptions(
+        useHybridComposition: true,
+      ),
+      ios: IOSInAppWebViewOptions(
+        allowsInlineMediaPlayback: true,
+      ));
+
+  late PullToRefreshController pullToRefreshController;
+
+  String url = "";
+
+  double progress = 0;
+
+  final urlController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+
+    pullToRefreshController = PullToRefreshController(
+      options: PullToRefreshOptions(
+        color: Colors.blue,
+      ),
+      onRefresh: () async {
+        if (Platform.isAndroid) {
+          webViewController?.reload();
+        } else if (Platform.isIOS) {
+          webViewController?.loadUrl(
+              urlRequest: URLRequest(url: await webViewController?.getUrl()));
+        }
+      },
+    );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         backgroundColor: primaryWhite,
-        body: Container(
-            margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
-            alignment: Alignment.center,
-            padding: EdgeInsets.all(10),
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Container(
-                    child: Text('ASSESSMENT MODULE',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                    margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
-                  ),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
-                    child: Text('The Lion is known as the king of the jungle?',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                  ),
-                  Container(
-                      child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Type Here",
-                    ),
-                  )),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
-                    child: Text('Name the National bird of India?',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                  ),
-                  Container(
-                      child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Type Here",
-                    ),
-                  )),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
-                    child: Text('What is the National Anthem of India?',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                  ),
-                  Container(
-                      child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Type Here",
-                    ),
-                  )),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
-                    child: Text('What is the National song of India?',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                  ),
-                  Container(
-                      child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Type Here",
-                    ),
-                  )),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
-                    child: Text('Baby frog is known as.......',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                  ),
-                  Container(
-                      child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Type Here",
-                    ),
-                  )),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
-                    child: Text(
-                        'How many consonants are there in the English alphabet?',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                  ),
-                  Container(
-                      child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Type Here",
-                    ),
-                  )),
-                  TextButton(
-                    // padding: EdgeInsets.all(1),
-                    child: Container(
-                        padding:
-                            EdgeInsets.symmetric(vertical: 15, horizontal: 15),
-                        decoration: BoxDecoration(
-                          color: primaryButton,
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(width: 2.0, color: primaryBar),
-                        ),
-                        child: Text(
-                          'SUBMIT',
-                          style: TextStyle(
-                              fontSize: 20,
-                              fontFamily: 'PTSerif',
-                              fontWeight: FontWeight.bold),
-                          textAlign: TextAlign.center,
-                        )),
-                    onPressed: () {},
-                  ),
-                ],
-              ),
-            )),
-      ),
-    );
+        appBar: AppBar(
+          title: Text('STELA'),
+          backgroundColor: primaryBar,
+          leading: TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Icon(
+                Icons.arrow_back,
+                color: primaryWhite,
+              )),
+        ),
+        body: SafeArea(
+            child: Column(children: <Widget>[
+          Expanded(
+            child: Stack(
+              children: [
+                InAppWebView(
+                  key: webViewKey,
+                  initialUrlRequest: URLRequest(url: Uri.parse(link)),
+                  initialOptions: options,
+                  pullToRefreshController: pullToRefreshController,
+                  onWebViewCreated: (controller) {
+                    webViewController = controller;
+                  },
+                  onLoadStart: (controller, url) {
+                    setState(() {
+                      this.url = url.toString();
+                      urlController.text = this.url;
+                    });
+                  },
+                  androidOnPermissionRequest:
+                      (controller, origin, resources) async {
+                    return PermissionRequestResponse(
+                        resources: resources,
+                        action: PermissionRequestResponseAction.GRANT);
+                  },
+                  shouldOverrideUrlLoading:
+                      (controller, navigationAction) async {
+                    var uri = navigationAction.request.url!;
+
+                    if (![
+                      "http",
+                      "https",
+                      "file",
+                      "chrome",
+                      "data",
+                      "javascript",
+                      "about"
+                    ].contains(uri.scheme)) {
+                      if (await canLaunch(url)) {
+                        // Launch the App
+                        await launch(
+                          url,
+                        );
+                        // and cancel the request
+                        return NavigationActionPolicy.CANCEL;
+                      }
+                    }
+
+                    return NavigationActionPolicy.ALLOW;
+                  },
+                  onLoadStop: (controller, url) async {
+                    pullToRefreshController.endRefreshing();
+                    setState(() {
+                      this.url = url.toString();
+                      urlController.text = this.url;
+                    });
+                  },
+                  onLoadError: (controller, url, code, message) {
+                    pullToRefreshController.endRefreshing();
+                  },
+                  onProgressChanged: (controller, progress) {
+                    if (progress == 100) {
+                      pullToRefreshController.endRefreshing();
+                    }
+                    setState(() {
+                      this.progress = progress / 100;
+                      urlController.text = this.url;
+                    });
+                  },
+                  onUpdateVisitedHistory: (controller, url, androidIsReload) {
+                    setState(() {
+                      this.url = url.toString();
+                      urlController.text = this.url;
+                    });
+                  },
+                  onConsoleMessage: (controller, consoleMessage) {
+                    print(consoleMessage);
+                  },
+                ),
+                progress < 1.0
+                    ? LinearProgressIndicator(value: progress)
+                    : Container(),
+              ],
+            ),
+          ),
+        ])));
   }
 }
