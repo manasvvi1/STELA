@@ -65,22 +65,6 @@ class _ProfileState extends State<Profile> {
               borderRadius: BorderRadius.circular(10),
               border: Border.all(width: 2.0, color: primaryBar),
             ),
-            child: Text('Course and Year : ' + branch,
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontFamily: 'PTSerif',
-                    fontWeight: FontWeight.bold)),
-            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-            alignment: Alignment.center,
-            padding: EdgeInsets.all(2),
-          ),
-          Container(
-            decoration: BoxDecoration(
-              color: primaryBar,
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(width: 2.0, color: primaryBar),
-            ),
             child: Text('Enrollment Number : ' + enrollmentNo,
                 style: TextStyle(
                     color: Colors.white,

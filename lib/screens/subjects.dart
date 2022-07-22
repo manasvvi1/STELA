@@ -59,16 +59,19 @@ class _SubjectsState extends State<Subjects> {
                             style: TextStyle(
                               fontSize: 25,
                               fontFamily: 'PTSerif-Bold',
+                              color: primaryWhite,
                             )),
                         Text('M. Tech.',
                             style: TextStyle(
                               fontSize: 20,
                               fontFamily: 'PTSerif',
+                              color: primaryWhite,
                             )),
                         Text('>>>',
                             style: TextStyle(
                               fontSize: 25,
                               fontFamily: 'PTSerif',
+                              color: primaryWhite,
                             ))
                       ],
                     )),

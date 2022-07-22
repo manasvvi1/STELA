@@ -62,6 +62,7 @@ class _ExperimentListState extends State<ExperimentList> {
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontFamily: 'PTSerif',
+                                    color: primaryWhite,
                                   ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
@@ -87,6 +88,7 @@ class _ExperimentListState extends State<ExperimentList> {
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontFamily: 'PTSerif',
+                                    color: primaryWhite,
                                   ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
@@ -112,6 +114,7 @@ class _ExperimentListState extends State<ExperimentList> {
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontFamily: 'PTSerif',
+                                    color: primaryWhite,
                                   ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
@@ -137,6 +140,7 @@ class _ExperimentListState extends State<ExperimentList> {
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontFamily: 'PTSerif',
+                                    color: primaryWhite,
                                   ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
@@ -162,6 +166,7 @@ class _ExperimentListState extends State<ExperimentList> {
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontFamily: 'PTSerif',
+                                    color: primaryWhite,
                                   ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
@@ -187,6 +192,7 @@ class _ExperimentListState extends State<ExperimentList> {
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontFamily: 'PTSerif',
+                                    color: primaryWhite,
                                   ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
@@ -212,6 +218,7 @@ class _ExperimentListState extends State<ExperimentList> {
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontFamily: 'PTSerif',
+                                    color: primaryWhite,
                                   ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
@@ -237,6 +244,7 @@ class _ExperimentListState extends State<ExperimentList> {
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontFamily: 'PTSerif',
+                                    color: primaryWhite,
                                   ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
@@ -262,6 +270,7 @@ class _ExperimentListState extends State<ExperimentList> {
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontFamily: 'PTSerif',
+                                    color: primaryWhite,
                                   ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
@@ -287,6 +296,7 @@ class _ExperimentListState extends State<ExperimentList> {
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontFamily: 'PTSerif',
+                                    color: primaryWhite,
                                   ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
@@ -312,6 +322,7 @@ class _ExperimentListState extends State<ExperimentList> {
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontFamily: 'PTSerif',
+                                    color: primaryWhite,
                                   ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {
@@ -337,6 +348,7 @@ class _ExperimentListState extends State<ExperimentList> {
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontFamily: 'PTSerif',
+                                    color: primaryWhite,
                                   ),
                                   textAlign: TextAlign.center)),
                           onPressed: () {

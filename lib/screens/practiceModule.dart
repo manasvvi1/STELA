@@ -140,26 +140,6 @@ class PracticeModule extends StatelessWidget {
                       hintText: "Type Here",
                     ),
                   )),
-                  TextButton(
-                    // padding: EdgeInsets.all(1),
-                    child: Container(
-                        padding:
-                            EdgeInsets.symmetric(vertical: 15, horizontal: 15),
-                        decoration: BoxDecoration(
-                          color: primaryButton,
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(width: 2.0, color: primaryBar),
-                        ),
-                        child: Text(
-                          'SUBMIT',
-                          style: TextStyle(
-                              fontSize: 20,
-                              fontFamily: 'PTSerif',
-                              fontWeight: FontWeight.bold),
-                          textAlign: TextAlign.center,
-                        )),
-                    onPressed: () {},
-                  ),
                 ],
               ),
             )),

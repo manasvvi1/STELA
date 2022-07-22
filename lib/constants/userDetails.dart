@@ -5,7 +5,6 @@ var userUID;
 String name = "",
     email = "",
     enrollmentNo = "",
-    branch = "",
     contactNum = "",
     password = "",
     confirmPassword = "";
@@ -24,6 +23,5 @@ void getDetails() async {
   name = data?["name"];
   email = data?['emailAddress'];
   enrollmentNo = data?['enrollmentNumber'];
-  branch = data?['courseAndBranch'];
   contactNum = data?['contactNumber'];
 }
