@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
-import 'package:stela_app/screens/analysisSubjects.dart';
 import 'package:stela_app/screens/profile.dart';
 import 'package:stela_app/screens/subjects.dart';
 

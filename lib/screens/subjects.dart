@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
-import 'package:stela_app/screens/analysisSubjects.dart';
 import 'package:stela_app/screens/experimentList.dart';
 import 'package:stela_app/screens/profile.dart';
 
@@ -18,14 +17,14 @@ class _SubjectsState extends State<Subjects> {
           appBar: AppBar(
             title: Text('STELA'),
             backgroundColor: primaryBar,
-            leading: TextButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: Icon(
-                  Icons.arrow_back,
-                  color: primaryWhite,
-                )),
+            // leading: TextButton(
+            //     onPressed: () {
+            //       Navigator.pop(context);
+            //     },
+            //     child: Icon(
+            //       Icons.arrow_back,
+            //       color: primaryWhite,
+            //     )),
           ),
           body: SingleChildScrollView(
             child: Container(

@@ -5,8 +5,6 @@ import 'package:stela_app/screens/modules.dart';
 import 'package:stela_app/screens/profile.dart';
 import 'package:stela_app/screens/subjects.dart';
 
-import 'analysisSubjects.dart';
-
 var expNum;
 
 class ExperimentList extends StatefulWidget {

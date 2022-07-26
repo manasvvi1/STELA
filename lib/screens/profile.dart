@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
-import 'package:stela_app/screens/analysisSubjects.dart';
 import 'package:stela_app/screens/contactUs.dart';
 import 'package:stela_app/screens/subjects.dart';
 import 'package:stela_app/constants/userDetails.dart';
@@ -22,14 +21,14 @@ class _ProfileState extends State<Profile> {
       appBar: AppBar(
         title: Text('STELA'),
         backgroundColor: primaryBar,
-        leading: TextButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            child: Icon(
-              Icons.arrow_back,
-              color: primaryWhite,
-            )),
+        // leading: TextButton(
+        //     onPressed: () {
+        //       Navigator.pop(context);
+        //     },
+        //     child: Icon(
+        //       Icons.arrow_back,
+        //       color: primaryWhite,
+        //     )),
       ),
       body: Container(
           child: Container(
@@ -61,13 +60,13 @@ class _ProfileState extends State<Profile> {
           ),
           Container(
             decoration: BoxDecoration(
-              color: primaryBar,
+              color: primaryWhite,
               borderRadius: BorderRadius.circular(10),
               border: Border.all(width: 2.0, color: primaryBar),
             ),
             child: Text('Enrollment Number : ' + enrollmentNo,
                 style: TextStyle(
-                    color: Colors.white,
+                    color: primaryBar,
                     fontSize: 20,
                     fontFamily: 'PTSerif',
                     fontWeight: FontWeight.bold)),
@@ -77,13 +76,13 @@ class _ProfileState extends State<Profile> {
           ),
           Container(
             decoration: BoxDecoration(
-              color: primaryBar,
+              color: primaryWhite,
               borderRadius: BorderRadius.circular(10),
               border: Border.all(width: 2.0, color: primaryBar),
             ),
             child: Text('Email ID : ' + email,
                 style: TextStyle(
-                    color: Colors.white,
+                    color: primaryBar,
                     fontSize: 20,
                     fontFamily: 'PTSerif',
                     fontWeight: FontWeight.bold)),
@@ -93,13 +92,13 @@ class _ProfileState extends State<Profile> {
           ),
           Container(
             decoration: BoxDecoration(
-              color: primaryBar,
+              color: primaryWhite,
               borderRadius: BorderRadius.circular(10),
               border: Border.all(width: 2.0, color: primaryBar),
             ),
             child: Text('Contact Number : ' + contactNum,
                 style: TextStyle(
-                    color: Colors.white,
+                    color: primaryBar,
                     fontSize: 20,
                     fontFamily: 'PTSerif',
                     fontWeight: FontWeight.bold)),
