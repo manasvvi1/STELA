@@ -117,7 +117,7 @@ class Login extends StatelessWidget {
                           userUID = FirebaseAuth.instance.currentUser?.uid;
                           getDetails();
                           if (signUser != null) {
-                            Navigator.push(
+                            Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => Subjects()),

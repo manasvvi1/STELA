@@ -4,7 +4,6 @@ import 'package:stela_app/constants/experimentDesc.dart';
 import 'package:stela_app/screens/experimentList.dart';
 import 'package:stela_app/screens/profile.dart';
 import 'package:stela_app/screens/subjects.dart';
-import 'package:stela_app/screens/analysisSubjects.dart';
 
 class Experiment extends StatelessWidget {
   @override
@@ -33,7 +32,7 @@ class Experiment extends StatelessWidget {
                 children: [
                   Container(
                       padding: EdgeInsets.all(10),
-                      child: Text('Experiment No.' + expNo[expNum],
+                      child: Text('Experiment No. ' + expNo[expNum],
                           style: TextStyle(
                               fontSize: 25,
                               fontFamily: 'PTSerif',
@@ -45,11 +44,14 @@ class Experiment extends StatelessWidget {
                       borderRadius: BorderRadius.circular(50),
                       color: primaryButton,
                     ),
-                    child: Text('AIM',
-                        style: TextStyle(
-                            fontSize: 12,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
+                    child: Text(
+                      'AIM',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontFamily: 'PTSerif',
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ), // AIM heading
                   Container(
                     padding: EdgeInsets.all(10),
@@ -61,128 +63,151 @@ class Experiment extends StatelessWidget {
                           children: <Widget>[
                             Text(
                               aim[expNum],
+                              style: TextStyle(
+                                fontSize: 15,
+                              ),
                             ),
                           ],
                         ),
                       ),
                     ),
                   ), // AIM text
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      color: primaryButton,
-                    ),
-                    width: double.infinity,
-                    child: Text('PROCEDURE',
-                        style: TextStyle(
-                            fontSize: 12,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                  ), // PROCEDURE heading
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    width: double.infinity,
-                    child: Flexible(
-                      child: Container(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            Text(
-                              procedure[expNum],
-                            ),
-                          ],
+                  if (procedure[expNum] != "") ...[
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: primaryButton,
+                      ),
+                      width: double.infinity,
+                      child: Text('PROCEDURE',
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontFamily: 'PTSerif',
+                              fontWeight: FontWeight.bold)),
+                    ), // PROCEDURE heading
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      width: double.infinity,
+                      child: Flexible(
+                        child: Container(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                procedure[expNum],
+                                style: TextStyle(
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
-                  ), // PROCEDURE text
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      color: primaryButton,
-                    ),
-                    width: double.infinity,
-                    child: Text('ALGORITHM',
-                        style: TextStyle(
-                            fontSize: 12,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                  ), // ALGORITHM heading
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    width: double.infinity,
-                    child: Flexible(
-                      child: Container(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            Text(
-                              algorithm[expNum],
-                            ),
-                          ],
+                  ], // PROCEDURE text
+                  if (algorithm[expNum] != "") ...[
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: primaryButton,
+                      ),
+                      width: double.infinity,
+                      child: Text('ALGORITHM',
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontFamily: 'PTSerif',
+                              fontWeight: FontWeight.bold)),
+                    ), // ALGORITHM heading
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      width: double.infinity,
+                      child: Flexible(
+                        child: Container(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                algorithm[expNum],
+                                style: TextStyle(
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
-                  ), // ALGORITHM text
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      color: primaryButton,
-                    ),
-                    width: double.infinity,
-                    child: Text('PROGRAM',
-                        style: TextStyle(
-                            fontSize: 12,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                  ), // PROGRAM heading
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    width: double.infinity,
-                    child: Flexible(
-                      child: Container(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            Text(
-                              program[expNum],
-                            ),
-                          ],
+                  ], // ALGORITHM text
+                  if (program[expNum] != "") ...[
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: primaryButton,
+                      ),
+                      width: double.infinity,
+                      child: Text('PROGRAM',
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontFamily: 'PTSerif',
+                              fontWeight: FontWeight.bold)),
+                    ), // PROGRAM heading
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      width: double.infinity,
+                      child: Flexible(
+                        child: Container(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                program[expNum],
+                                style: TextStyle(
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
-                    ),
-                  ), // PROGRAM text
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      color: primaryButton,
-                    ),
-                    width: double.infinity,
-                    child: Text('RESULT',
-                        style: TextStyle(
-                            fontSize: 12,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                  ), // RESULT heading
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    width: double.infinity,
-                    child: Flexible(
-                      child: Container(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            Text(
-                              result[expNum],
-                            ),
-                          ],
+                    ), // PROGRAM text
+                  ],
+                  if (result[expNum] != "") ...[
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: primaryButton,
+                      ),
+                      width: double.infinity,
+                      child: Text('RESULT',
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontFamily: 'PTSerif',
+                              fontWeight: FontWeight.bold)),
+                    ), // RESULT heading
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      width: double.infinity,
+                      child: Flexible(
+                        child: Container(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                result[expNum],
+                                style: TextStyle(
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
-                    ),
-                  ), // RESULT text
+                    ), // RESULT text
+                  ]
                 ],
               )),
         ),
@@ -205,19 +230,19 @@ class Experiment extends StatelessWidget {
                   size: 40,
                 ),
               ),
-              IconButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => AnalysisSubjects()),
-                  );
-                },
-                icon: Icon(
-                  Icons.saved_search_rounded,
-                  color: primaryWhite,
-                  size: 40,
-                ),
-              ),
+              // IconButton(
+              //   onPressed: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => AnalysisSubjects()),
+              //     );
+              //   },
+              //   icon: Icon(
+              //     Icons.saved_search_rounded,
+              //     color: primaryWhite,
+              //     size: 40,
+              //   ),
+              // ),
               IconButton(
                 onPressed: () {
                   Navigator.push(

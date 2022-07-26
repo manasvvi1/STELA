@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
+import 'package:stela_app/constants/experimentDesc.dart';
 import 'package:stela_app/screens/modules.dart';
 import 'package:stela_app/screens/profile.dart';
 import 'package:stela_app/screens/subjects.dart';
@@ -14,8 +15,14 @@ class ExperimentList extends StatefulWidget {
 }
 
 class _ExperimentListState extends State<ExperimentList> {
+  final colChildren = <Widget>[];
+
   @override
   Widget build(BuildContext context) {
+    for (var i = 0; i < 10; i++) {
+      colChildren.add(new ListTile());
+    }
+
     return MaterialApp(
       home: Scaffold(
           backgroundColor: primaryWhite,
@@ -47,320 +54,37 @@ class _ExperimentListState extends State<ExperimentList> {
                               fontWeight: FontWeight.bold))),
                   Container(
                     child: Column(
-                      children: [
-                        TextButton(
-                          child: Container(
-                              width: double.infinity,
-                              padding: EdgeInsets.symmetric(vertical: 5),
-                              decoration: BoxDecoration(
-                                color: primaryButton,
-                                borderRadius: BorderRadius.circular(10),
-                                border:
-                                    Border.all(width: 2.0, color: primaryBar),
-                              ),
-                              child: Text('Experiment No. 1',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'PTSerif',
-                                    color: primaryWhite,
-                                  ),
-                                  textAlign: TextAlign.center)),
-                          onPressed: () {
-                            expNum = 0;
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Modules()),
-                            );
-                          },
-                        ),
-                        TextButton(
-                          child: Container(
-                              width: double.infinity,
-                              padding: EdgeInsets.symmetric(vertical: 5),
-                              decoration: BoxDecoration(
-                                color: primaryButton,
-                                borderRadius: BorderRadius.circular(10),
-                                border:
-                                    Border.all(width: 2.0, color: primaryBar),
-                              ),
-                              child: Text('Experiment No. 2',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'PTSerif',
-                                    color: primaryWhite,
-                                  ),
-                                  textAlign: TextAlign.center)),
-                          onPressed: () {
-                            expNum = 1;
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Modules()),
-                            );
-                          },
-                        ),
-                        TextButton(
-                          child: Container(
-                              width: double.infinity,
-                              padding: EdgeInsets.symmetric(vertical: 5),
-                              decoration: BoxDecoration(
-                                color: primaryButton,
-                                borderRadius: BorderRadius.circular(10),
-                                border:
-                                    Border.all(width: 2.0, color: primaryBar),
-                              ),
-                              child: Text('Experiment No. 3',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'PTSerif',
-                                    color: primaryWhite,
-                                  ),
-                                  textAlign: TextAlign.center)),
-                          onPressed: () {
-                            expNum = 2;
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Modules()),
-                            );
-                          },
-                        ),
-                        TextButton(
-                          child: Container(
-                              width: double.infinity,
-                              padding: EdgeInsets.symmetric(vertical: 5),
-                              decoration: BoxDecoration(
-                                color: primaryButton,
-                                borderRadius: BorderRadius.circular(10),
-                                border:
-                                    Border.all(width: 2.0, color: primaryBar),
-                              ),
-                              child: Text('Experiment No. 4(a)',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'PTSerif',
-                                    color: primaryWhite,
-                                  ),
-                                  textAlign: TextAlign.center)),
-                          onPressed: () {
-                            expNum = 3;
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Modules()),
-                            );
-                          },
-                        ),
-                        TextButton(
-                          child: Container(
-                              width: double.infinity,
-                              padding: EdgeInsets.symmetric(vertical: 5),
-                              decoration: BoxDecoration(
-                                color: primaryButton,
-                                borderRadius: BorderRadius.circular(10),
-                                border:
-                                    Border.all(width: 2.0, color: primaryBar),
-                              ),
-                              child: Text('Experiment No. 4(b)',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'PTSerif',
-                                    color: primaryWhite,
-                                  ),
-                                  textAlign: TextAlign.center)),
-                          onPressed: () {
-                            expNum = 4;
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Modules()),
-                            );
-                          },
-                        ),
-                        TextButton(
-                          child: Container(
-                              width: double.infinity,
-                              padding: EdgeInsets.symmetric(vertical: 5),
-                              decoration: BoxDecoration(
-                                color: primaryButton,
-                                borderRadius: BorderRadius.circular(10),
-                                border:
-                                    Border.all(width: 2.0, color: primaryBar),
-                              ),
-                              child: Text('Experiment No. 5',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'PTSerif',
-                                    color: primaryWhite,
-                                  ),
-                                  textAlign: TextAlign.center)),
-                          onPressed: () {
-                            expNum = 5;
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Modules()),
-                            );
-                          },
-                        ),
-                        TextButton(
-                          child: Container(
-                              width: double.infinity,
-                              padding: EdgeInsets.symmetric(vertical: 5),
-                              decoration: BoxDecoration(
-                                color: primaryButton,
-                                borderRadius: BorderRadius.circular(10),
-                                border:
-                                    Border.all(width: 2.0, color: primaryBar),
-                              ),
-                              child: Text('Experiment No. 6',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'PTSerif',
-                                    color: primaryWhite,
-                                  ),
-                                  textAlign: TextAlign.center)),
-                          onPressed: () {
-                            expNum = 6;
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Modules()),
-                            );
-                          },
-                        ),
-                        TextButton(
-                          child: Container(
-                              width: double.infinity,
-                              padding: EdgeInsets.symmetric(vertical: 5),
-                              decoration: BoxDecoration(
-                                color: primaryButton,
-                                borderRadius: BorderRadius.circular(10),
-                                border:
-                                    Border.all(width: 2.0, color: primaryBar),
-                              ),
-                              child: Text('Experiment No. 7',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'PTSerif',
-                                    color: primaryWhite,
-                                  ),
-                                  textAlign: TextAlign.center)),
-                          onPressed: () {
-                            expNum = 7;
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Modules()),
-                            );
-                          },
-                        ),
-                        TextButton(
-                          child: Container(
-                              width: double.infinity,
-                              padding: EdgeInsets.symmetric(vertical: 5),
-                              decoration: BoxDecoration(
-                                color: primaryButton,
-                                borderRadius: BorderRadius.circular(10),
-                                border:
-                                    Border.all(width: 2.0, color: primaryBar),
-                              ),
-                              child: Text('Experiment No. 8(a)',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'PTSerif',
-                                    color: primaryWhite,
-                                  ),
-                                  textAlign: TextAlign.center)),
-                          onPressed: () {
-                            expNum = 8;
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Modules()),
-                            );
-                          },
-                        ),
-                        TextButton(
-                          child: Container(
-                              width: double.infinity,
-                              padding: EdgeInsets.symmetric(vertical: 5),
-                              decoration: BoxDecoration(
-                                color: primaryButton,
-                                borderRadius: BorderRadius.circular(10),
-                                border:
-                                    Border.all(width: 2.0, color: primaryBar),
-                              ),
-                              child: Text('Experiment No. 8(b)',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'PTSerif',
-                                    color: primaryWhite,
-                                  ),
-                                  textAlign: TextAlign.center)),
-                          onPressed: () {
-                            expNum = 9;
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Modules()),
-                            );
-                          },
-                        ),
-                        TextButton(
-                          child: Container(
-                              width: double.infinity,
-                              padding: EdgeInsets.symmetric(vertical: 5),
-                              decoration: BoxDecoration(
-                                color: primaryButton,
-                                borderRadius: BorderRadius.circular(10),
-                                border:
-                                    Border.all(width: 2.0, color: primaryBar),
-                              ),
-                              child: Text('Experiment No. 9',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'PTSerif',
-                                    color: primaryWhite,
-                                  ),
-                                  textAlign: TextAlign.center)),
-                          onPressed: () {
-                            expNum = 10;
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Modules()),
-                            );
-                          },
-                        ),
-                        TextButton(
-                          child: Container(
-                              width: double.infinity,
-                              padding: EdgeInsets.symmetric(vertical: 5),
-                              decoration: BoxDecoration(
-                                color: primaryButton,
-                                borderRadius: BorderRadius.circular(10),
-                                border:
-                                    Border.all(width: 2.0, color: primaryBar),
-                              ),
-                              child: Text('Experiment No. 10',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'PTSerif',
-                                    color: primaryWhite,
-                                  ),
-                                  textAlign: TextAlign.center)),
-                          onPressed: () {
-                            expNum = 11;
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Modules()),
-                            );
-                          },
-                        ),
-                      ],
+                      children: List.generate(
+                        expNo.length,
+                        (index) {
+                          return TextButton(
+                            child: Container(
+                                width: double.infinity,
+                                padding: EdgeInsets.symmetric(vertical: 5),
+                                decoration: BoxDecoration(
+                                  color: primaryButton,
+                                  borderRadius: BorderRadius.circular(10),
+                                  border:
+                                      Border.all(width: 2.0, color: primaryBar),
+                                ),
+                                child: Text('Experiment No. ' + expNo[index],
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      fontFamily: 'PTSerif',
+                                      color: primaryBar,
+                                    ),
+                                    textAlign: TextAlign.center)),
+                            onPressed: () {
+                              expNum = index;
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Modules()),
+                              );
+                            },
+                          );
+                        },
+                      ),
                     ),
                   ),
                 ],
@@ -386,20 +110,20 @@ class _ExperimentListState extends State<ExperimentList> {
                     size: 40,
                   ),
                 ),
-                IconButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => AnalysisSubjects()),
-                    );
-                  },
-                  icon: Icon(
-                    Icons.saved_search_rounded,
-                    color: primaryWhite,
-                    size: 40,
-                  ),
-                ),
+                // IconButton(
+                //   onPressed: () {
+                //     Navigator.push(
+                //       context,
+                //       MaterialPageRoute(
+                //           builder: (context) => AnalysisSubjects()),
+                //     );
+                //   },
+                //   icon: Icon(
+                //     Icons.saved_search_rounded,
+                //     color: primaryWhite,
+                //     size: 40,
+                //   ),
+                // ),
                 IconButton(
                   onPressed: () {
                     Navigator.push(

@@ -203,7 +203,7 @@ class SignUp extends StatelessWidget {
                             'password': password,
                           });
                           if (newUser != null) {
-                            Navigator.push(
+                            Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => Subjects()),

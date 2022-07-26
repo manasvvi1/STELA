@@ -162,19 +162,19 @@ class PracticeModule extends StatelessWidget {
                   size: 40,
                 ),
               ),
-              IconButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => AnalysisSubjects()),
-                  );
-                },
-                icon: Icon(
-                  Icons.saved_search_rounded,
-                  color: primaryWhite,
-                  size: 40,
-                ),
-              ),
+              // IconButton(
+              //   onPressed: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => AnalysisSubjects()),
+              //     );
+              //   },
+              //   icon: Icon(
+              //     Icons.saved_search_rounded,
+              //     color: primaryWhite,
+              //     size: 40,
+              //   ),
+              // ),
               IconButton(
                 onPressed: () {
                   Navigator.push(
