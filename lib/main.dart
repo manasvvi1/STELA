@@ -1,4 +1,4 @@
-import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/splash.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -12,7 +12,7 @@ void main() async {
   );
   WidgetsFlutterBinding.ensureInitialized();
 
-  if (Platform.isAndroid) {
+  if (defaultTargetPlatform == TargetPlatform.android) {
     await AndroidInAppWebViewController.setWebContentsDebuggingEnabled(true);
   }
 

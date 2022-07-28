@@ -59,6 +59,7 @@ class _ExperimentListState extends State<ExperimentList> {
                             child: Container(
                                 width: double.infinity,
                                 padding: EdgeInsets.symmetric(vertical: 5),
+                                margin: EdgeInsets.symmetric(vertical: 7),
                                 decoration: BoxDecoration(
                                   color: primaryButton,
                                   borderRadius: BorderRadius.circular(10),

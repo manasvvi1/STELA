@@ -1,6 +1,7 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
-import 'dart:io';
+// import 'dart:io';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -200,9 +201,9 @@ class _FeedbackState extends State<Feedback> {
         color: Colors.blue,
       ),
       onRefresh: () async {
-        if (Platform.isAndroid) {
+        if (defaultTargetPlatform == TargetPlatform.android) {
           webViewController?.reload();
-        } else if (Platform.isIOS) {
+        } else if (defaultTargetPlatform == TargetPlatform.iOS) {
           webViewController?.loadUrl(
               urlRequest: URLRequest(url: await webViewController?.getUrl()));
         }
