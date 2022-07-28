@@ -62,7 +62,7 @@ class Experiment extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Text(
-                              aim[expNum],
+                              aim,
                               style: TextStyle(
                                 fontSize: 15,
                               ),
@@ -72,7 +72,7 @@ class Experiment extends StatelessWidget {
                       ),
                     ),
                   ), // AIM text
-                  if (procedure[expNum] != "") ...[
+                  if (procedure != "") ...[
                     Container(
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
@@ -95,7 +95,7 @@ class Experiment extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Text(
-                                procedure[expNum],
+                                procedure,
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
@@ -106,7 +106,7 @@ class Experiment extends StatelessWidget {
                       ),
                     ),
                   ], // PROCEDURE text
-                  if (algorithm[expNum] != "") ...[
+                  if (algorithm != "") ...[
                     Container(
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
@@ -129,7 +129,7 @@ class Experiment extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Text(
-                                algorithm[expNum],
+                                algorithm,
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
@@ -140,7 +140,7 @@ class Experiment extends StatelessWidget {
                       ),
                     ),
                   ], // ALGORITHM text
-                  if (program[expNum] != "") ...[
+                  if (program != "") ...[
                     Container(
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
@@ -163,7 +163,7 @@ class Experiment extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Text(
-                                program[expNum],
+                                program,
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),
@@ -174,7 +174,7 @@ class Experiment extends StatelessWidget {
                       ),
                     ), // PROGRAM text
                   ],
-                  if (result[expNum] != "") ...[
+                  if (result != "") ...[
                     Container(
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
@@ -197,7 +197,7 @@ class Experiment extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Text(
-                                result[expNum],
+                                result,
                                 style: TextStyle(
                                   fontSize: 15,
                                 ),

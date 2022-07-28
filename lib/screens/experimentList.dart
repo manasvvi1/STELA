@@ -75,6 +75,7 @@ class _ExperimentListState extends State<ExperimentList> {
                                     textAlign: TextAlign.center)),
                             onPressed: () {
                               expNum = index;
+                              getExperiment(index);
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
