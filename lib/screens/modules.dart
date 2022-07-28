@@ -46,7 +46,7 @@ class _ModulesState extends State<Modules> {
                             borderRadius: BorderRadius.circular(150),
                             child: Image(
                               image: NetworkImage(
-                                  'https://www.tutorialkart.com/img/hummingbird.png'),
+                                  'https://png.pngitem.com/pimgs/s/77-775088_take-the-free-assessment-findings-icon-png-transparent.png'),
                             ),
                           ),
                         ),
@@ -87,7 +87,7 @@ class _ModulesState extends State<Modules> {
                                   borderRadius: BorderRadius.circular(150),
                                   child: Image(
                                     image: NetworkImage(
-                                        'https://www.tutorialkart.com/img/hummingbird.png'),
+                                        'https://w7.pngwing.com/pngs/303/119/png-transparent-evaluation-system-project-encapsulated-postscript-listed-miscellaneous-angle-text.png'),
                                   ),
                                 ),
                               ),
@@ -129,7 +129,7 @@ class _ModulesState extends State<Modules> {
                                             BorderRadius.circular(150),
                                         child: Image(
                                           image: NetworkImage(
-                                              'https://www.tutorialkart.com/img/hummingbird.png'),
+                                              'https://w7.pngwing.com/pngs/827/120/png-transparent-educational-assessment-test-computer-icons-risk-assessment-assess-angle-text-logo-thumbnail.png'),
                                         ),
                                       ),
                                     ),
