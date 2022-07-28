@@ -6,6 +6,7 @@ import 'firebase_options.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
 void main() async {
+  await Future.delayed(const Duration(milliseconds: 300));
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -16,7 +17,19 @@ void main() async {
     await AndroidInAppWebViewController.setWebContentsDebuggingEnabled(true);
   }
 
-  runApp(MaterialApp(
-    home: MyApp(),
-  ));
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      // title: 'Splash Screen',
+      // theme: ThemeData(
+      //   primarySwatch: Colors.green,
+      // ),
+      home: Splash(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
 }
