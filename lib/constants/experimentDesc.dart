@@ -23,8 +23,8 @@ List<String> expNo = [
   "20"
 ];
 
-var practiceQues = ["jkjaks", "Q2. uhihihias"];
-var practiceAns = ["jie", "jnkjals"];
+var practiceQues = ["jkjaks", "Q2. uhihihias", "jkjaks", "Q2. uhihihias", "jkjaks", "Q2. uhihihias", "jkjaks", "Q2. uhihihias", "jkjaks", "Q2. uhihihias"];
+var practiceAns = ["jie", "jnkjals", "jie", "jnkjals", "jie", "jnkjals", "jie", "jnkjals", "jie", "jnkjals"];
 
 var experimentCollection, experimentDoc, experimentData;
 String aim = "", procedure = "", algorithm = "", program = "", result = "";
@@ -39,5 +39,23 @@ void getExperiment(var index) {
     result = data?["RESULT"];
     practiceQues[0] = data?["Practice1"];
     practiceAns[0] = data?["PracticeAns1"];
+    practiceQues[1] = data?["Practice2"];
+    practiceAns[1] = data?["PracticeAns2"];
+    practiceQues[2] = data?["Practice3"];
+    practiceAns[2] = data?["PracticeAns3"];
+    practiceQues[3] = data?["Practice4"];
+    practiceAns[3] = data?["PracticeAns4"];
+    practiceQues[4] = data?["Practice5"];
+    practiceAns[4] = data?["PracticeAns5"];
+    practiceQues[5] = data?["Practice6"];
+    practiceAns[5] = data?["PracticeAns6"];
+    practiceQues[6] = data?["Practice7"];
+    practiceAns[6] = data?["PracticeAns7"];
+    practiceQues[7] = data?["Practice8"];
+    practiceAns[7] = data?["PracticeAns8"];
+    practiceQues[8] = data?["Practice9"];
+    practiceAns[8] = data?["PracticeAns9"];
+    practiceQues[9] = data?["Practice10"];
+    practiceAns[9] = data?["PracticeAns10"];
   });
 }

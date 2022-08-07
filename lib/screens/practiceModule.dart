@@ -11,7 +11,7 @@ class PracticeModule extends StatefulWidget {
 }
 
 class _PracticeModuleState extends State<PracticeModule> {
-  List<bool> isVisible = [false, false];
+  List<bool> isVisible = [false, false, false, false, false, false, false, false, false, false];
 
   void toggleVisibility(int index){
     setState(() {
