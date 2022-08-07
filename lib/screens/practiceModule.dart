@@ -1,13 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
+import 'package:stela_app/screens/experimentList.dart';
 import 'package:stela_app/screens/profile.dart';
 import 'package:stela_app/screens/subjects.dart';
+import 'package:stela_app/constants/experimentDesc.dart';
 
-void main() {
-  runApp(PracticeModule());
+class PracticeModule extends StatefulWidget {
+  @override
+  State<PracticeModule> createState() => _PracticeModuleState();
 }
 
-class PracticeModule extends StatelessWidget {
+class _PracticeModuleState extends State<PracticeModule> {
+  List<bool> isVisible = [false, false];
+
+  void toggleVisibility(int index){
+    setState(() {
+      isVisible[index] = !isVisible[index];
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,123 +36,85 @@ class PracticeModule extends StatelessWidget {
                 color: primaryWhite,
               )),
         ),
-        body: Container(
+        body: SingleChildScrollView(
+          child: Container(
             margin: EdgeInsets.symmetric(vertical: 40, horizontal: 10),
             alignment: Alignment.center,
             padding: EdgeInsets.all(10),
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Container(
-                    child: Text('PRACTICE MODULE',
+            child: Column(
+              children: [
+                Container(
+                    padding: EdgeInsets.all(10),
+                    child: Text('PRACTICE QUESTIONS\nExperiment ' + expNo[expNum],
                         style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                    margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
-                  ),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
-                    child: Text('The Lion is known as the king of the jungle?',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                  ),
-                  Container(
-                      child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Type Here",
+                            fontSize: 25,
+                            fontFamily: 'PTSerif-Bold',
+                            fontWeight: FontWeight.bold
+                        ),
+                      textAlign: TextAlign.center,
                     ),
-                  )),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
-                    child: Text('Name the National bird of India?',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                  ),
-                  Container(
-                      child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Type Here",
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Container(
+                  alignment: Alignment.topLeft,
+                  child: Column(
+                    children: List.generate(practiceQues.length,
+                        (index){
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text(practiceQues[index],
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          TextButton(
+                            onPressed: (){
+                              setState(() {
+                                isVisible[index] = !isVisible[index];
+                              });
+                            },
+                            child: Container(
+                              margin: EdgeInsets.all(0),
+                              width: double.infinity,
+                              padding: EdgeInsets.all(8.0),
+                              child: Text('Check Answer',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: primaryWhite,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              decoration: BoxDecoration(
+                                color: primaryBar,
+                                borderRadius: BorderRadius.circular(5),
+                              ),
+                            ),
+                          ),
+                          Visibility(
+                            child: Text('Answer: ' + practiceAns[index],
+                              style: TextStyle(
+                                fontSize: 15,
+                              ),
+                            ),
+                            visible: isVisible[index],
+                          ),
+                          SizedBox(
+                            height: 15,
+                          ),
+                        ],
+                      );
+                        }
                     ),
-                  )),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
-                    child: Text('What is the National Anthem of India?',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
                   ),
-                  Container(
-                      child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Type Here",
-                    ),
-                  )),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
-                    child: Text('What is the National song of India?',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                  ),
-                  Container(
-                      child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Type Here",
-                    ),
-                  )),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
-                    child: Text('Baby frog is known as.......',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                  ),
-                  Container(
-                      child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Type Here",
-                    ),
-                  )),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.all(2),
-                    child: Text(
-                        'How many consonants are there in the English alphabet?',
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontFamily: 'PTSerif',
-                            fontWeight: FontWeight.bold)),
-                  ),
-                  Container(
-                      child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Type Here",
-                    ),
-                  )),
-                ],
-              ),
-            )),
+                ),
+              ],
+            ),
+          ),
+        ),
         bottomNavigationBar: Container(
           color: primaryBar,
           padding: EdgeInsets.all(7),

@@ -23,6 +23,9 @@ List<String> expNo = [
   "20"
 ];
 
+var practiceQues = ["jkjaks", "Q2. uhihihias"];
+var practiceAns = ["jie", "jnkjals"];
+
 var experimentCollection, experimentDoc, experimentData;
 String aim = "", procedure = "", algorithm = "", program = "", result = "";
 
@@ -34,5 +37,7 @@ void getExperiment(var index) {
     algorithm = data?["ALGORITHM"];
     program = data?["PROGRAM"];
     result = data?["RESULT"];
+    practiceQues[0] = data?["Practice1"];
+    practiceAns[0] = data?["PracticeAns1"];
   });
 }
