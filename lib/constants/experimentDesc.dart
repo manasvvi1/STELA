@@ -23,8 +23,15 @@ List<String> expNo = [
   "20"
 ];
 
-var practiceQues = ["jkjaks", "Q2. uhihihias", "jkjaks", "Q2. uhihihias", "jkjaks", "Q2. uhihihias", "jkjaks", "Q2. uhihihias", "jkjaks", "Q2. uhihihias"];
-var practiceAns = ["jie", "jnkjals", "jie", "jnkjals", "jie", "jnkjals", "jie", "jnkjals", "jie", "jnkjals"];
+var practiceQues = [
+  "Q1. ",
+  "Q2.  ",
+  "Q3.  ",
+  "Q4.  ",
+  "Q5. ",
+  "Q6. ", "Q7. ", "Q8. ", "Q9. ", "Q10. "];
+
+var practiceAns = ["Three", "True", "2^n - 1", "Brahma", "jnkjals", "jnkjals", "jie", "jnkjals", "jie", "jnkjals"];
 
 var experimentCollection, experimentDoc, experimentData;
 String aim = "", procedure = "", algorithm = "", program = "", result = "";

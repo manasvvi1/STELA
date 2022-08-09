@@ -12,6 +12,7 @@ class _SubjectsState extends State<Subjects> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
           backgroundColor: primaryWhite,
           appBar: AppBar(

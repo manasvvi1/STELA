@@ -22,6 +22,7 @@ class _ExperimentListState extends State<ExperimentList> {
     }
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
           backgroundColor: primaryWhite,
           appBar: AppBar(

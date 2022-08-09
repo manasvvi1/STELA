@@ -16,6 +16,7 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
       backgroundColor: primaryWhite,
       appBar: AppBar(
@@ -35,36 +36,52 @@ class _ProfileState extends State<Profile> {
         margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
         alignment: Alignment.center,
         padding: EdgeInsets.all(10),
-        child: Column(children: <Widget>[
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
           Icon(
             Icons.account_circle_outlined,
             color: primaryButton,
             size: 200,
           ),
-          Text(name,
-              style: TextStyle(
-                  color: primaryButton,
-                  fontSize: 20,
-                  fontFamily: 'PTSerif-ExtraBold',
-                  fontWeight: FontWeight.bold)),
           Container(
-            child: Text('-------------',
+            padding: EdgeInsets.only(
+              bottom: 3, // This can be the space you need between text and underline
+            ),
+            decoration: BoxDecoration(
+                border: Border(bottom: BorderSide(
+                  color: Colors.black,
+                  width: 2.0, // This would be the width of the underline
+                ))
+            ),
+            child: Text(name,
                 style: TextStyle(
                     color: primaryButton,
-                    fontSize: 50,
-                    fontFamily: 'PTSerif',
+                    fontSize: 20,
+                    fontFamily: 'PTSerif-ExtraBold',
                     fontWeight: FontWeight.bold)),
-            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-            alignment: Alignment.center,
-            padding: EdgeInsets.all(2),
           ),
+          // Container(
+          //   child: Text('__________',
+          //       style: TextStyle(
+          //           color: primaryButton,
+          //           fontSize: 50,
+          //           fontFamily: 'PTSerif',
+          //           fontWeight: FontWeight.bold)),
+          //   margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+          //   alignment: Alignment.center,
+          //   padding: EdgeInsets.all(2),
+          // ),
+              SizedBox(
+                height: 45,
+              ),
           Container(
             decoration: BoxDecoration(
               color: primaryWhite,
               borderRadius: BorderRadius.circular(10),
               border: Border.all(width: 2.0, color: primaryBar),
             ),
-            child: Text('Enrollment Number : ' + enrollmentNo,
+            child: Text('Enrollment No. : ' + enrollmentNo,
                 style: TextStyle(
                     color: primaryBar,
                     fontSize: 20,
