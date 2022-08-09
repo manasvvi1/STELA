@@ -44,7 +44,7 @@ class _HomeState extends State<Home> {
                             child: Text(
                               'LOG IN',
                               style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 15,
                                   fontFamily: 'PTSerif-Bold',
                                   fontWeight: FontWeight.bold),
                               textAlign: TextAlign.center,
@@ -72,7 +72,7 @@ class _HomeState extends State<Home> {
                             child: Text(
                               'SIGN UP',
                               style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 15,
                                   fontFamily: 'PTSerif-Bold',
                                   fontWeight: FontWeight.bold),
                               textAlign: TextAlign.center,

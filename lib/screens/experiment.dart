@@ -26,7 +26,7 @@ class Experiment extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: Container(
-              margin: EdgeInsets.symmetric(vertical: 30, horizontal: 10),
+              margin: EdgeInsets.symmetric(horizontal: 10),
               alignment: Alignment.center,
               padding: EdgeInsets.all(10),
               child: Column(
@@ -35,7 +35,7 @@ class Experiment extends StatelessWidget {
                       padding: EdgeInsets.all(10),
                       child: Text('Experiment No. ' + expNo[expNum],
                           style: TextStyle(
-                              fontSize: 25,
+                              fontSize: 20,
                               fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold))), // Heading
                   Container(
@@ -48,7 +48,7 @@ class Experiment extends StatelessWidget {
                     child: Text(
                       'AIM',
                       style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 12,
                         fontFamily: 'PTSerif',
                         fontWeight: FontWeight.bold,
                       ),
@@ -65,7 +65,7 @@ class Experiment extends StatelessWidget {
                             Text(
                               aim,
                               style: TextStyle(
-                                fontSize: 15,
+                                fontSize: 12,
                               ),
                             ),
                           ],
@@ -83,7 +83,7 @@ class Experiment extends StatelessWidget {
                       width: double.infinity,
                       child: Text('PROCEDURE',
                           style: TextStyle(
-                              fontSize: 15,
+                              fontSize: 12,
                               fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold)),
                     ), // PROCEDURE heading
@@ -98,7 +98,7 @@ class Experiment extends StatelessWidget {
                               Text(
                                 procedure,
                                 style: TextStyle(
-                                  fontSize: 15,
+                                  fontSize: 12,
                                 ),
                               ),
                             ],
@@ -117,10 +117,10 @@ class Experiment extends StatelessWidget {
                       width: double.infinity,
                       child: Text('ALGORITHM',
                           style: TextStyle(
-                              fontSize: 15,
+                              fontSize: 12,
                               fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold)),
-                    ), // ALGORITHM heading
+                    ), // PROGRAM heading
                     Container(
                       padding: EdgeInsets.all(10),
                       width: double.infinity,
@@ -132,7 +132,7 @@ class Experiment extends StatelessWidget {
                               Text(
                                 algorithm,
                                 style: TextStyle(
-                                  fontSize: 15,
+                                  fontSize: 12,
                                 ),
                               ),
                             ],
@@ -151,7 +151,7 @@ class Experiment extends StatelessWidget {
                       width: double.infinity,
                       child: Text('PROGRAM',
                           style: TextStyle(
-                              fontSize: 15,
+                              fontSize: 12,
                               fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold)),
                     ), // PROGRAM heading
@@ -166,7 +166,7 @@ class Experiment extends StatelessWidget {
                               Text(
                                 program,
                                 style: TextStyle(
-                                  fontSize: 15,
+                                  fontSize: 12,
                                 ),
                               ),
                             ],
@@ -185,7 +185,7 @@ class Experiment extends StatelessWidget {
                       width: double.infinity,
                       child: Text('RESULT',
                           style: TextStyle(
-                              fontSize: 15,
+                              fontSize: 12,
                               fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold)),
                     ), // RESULT heading
@@ -200,7 +200,7 @@ class Experiment extends StatelessWidget {
                               Text(
                                 result,
                                 style: TextStyle(
-                                  fontSize: 15,
+                                  fontSize: 12,
                                 ),
                               ),
                             ],
@@ -214,7 +214,7 @@ class Experiment extends StatelessWidget {
         ),
         bottomNavigationBar: Container(
           color: primaryBar,
-          padding: EdgeInsets.all(7),
+          // padding: EdgeInsets.all(7),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -228,7 +228,7 @@ class Experiment extends StatelessWidget {
                 icon: Icon(
                   Icons.home,
                   color: primaryWhite,
-                  size: 40,
+                  size: 35,
                 ),
               ),
               // IconButton(
@@ -254,7 +254,7 @@ class Experiment extends StatelessWidget {
                 icon: Icon(
                   Icons.account_circle,
                   color: primaryWhite,
-                  size: 40,
+                  size: 35,
                 ),
               ),
             ],

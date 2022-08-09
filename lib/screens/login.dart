@@ -39,9 +39,9 @@ class Login extends StatelessWidget {
                   children: [
                     Container(
                       child: Text(
-                        'LOGIN CREDENTIALS',
+                        'LOGIN',
                         style: TextStyle(
-                          fontSize: 50,
+                          fontSize: 25,
                           fontFamily: 'PTSerif',
                           fontWeight: FontWeight.bold,
                         ),
@@ -68,7 +68,7 @@ class Login extends StatelessWidget {
                         contentPadding:
                             EdgeInsets.symmetric(horizontal: 0, vertical: 0),
                       ),
-                    )),
+                    ),),
                     SizedBox(
                       height: 15,
                     ),
@@ -104,12 +104,12 @@ class Login extends StatelessWidget {
                           child: Text(
                             'LOGIN',
                             style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 15,
                                 fontFamily: 'PTSerif',
                                 fontWeight: FontWeight.bold,
                                 color: primaryBar),
                             textAlign: TextAlign.center,
-                          )),
+                          ),),
                       onPressed: () async {
                         try {
                           final signUser =

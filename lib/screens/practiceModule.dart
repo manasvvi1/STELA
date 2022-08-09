@@ -39,7 +39,7 @@ class _PracticeModuleState extends State<PracticeModule> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            margin: EdgeInsets.symmetric(vertical: 40, horizontal: 10),
+            // margin: EdgeInsets.symmetric(vertical: 40, horizontal: 10),
             alignment: Alignment.center,
             padding: EdgeInsets.all(10),
             child: Column(
@@ -48,7 +48,7 @@ class _PracticeModuleState extends State<PracticeModule> {
                     padding: EdgeInsets.all(10),
                     child: Text('PRACTICE QUESTIONS\nExperiment ' + expNo[expNum],
                         style: TextStyle(
-                            fontSize: 25,
+                            fontSize: 15,
                             fontFamily: 'PTSerif-Bold',
                             fontWeight: FontWeight.bold
                         ),
@@ -68,7 +68,7 @@ class _PracticeModuleState extends State<PracticeModule> {
                         children: [
                           Text(practiceQues[index],
                             style: TextStyle(
-                              fontSize: 15,
+                              fontSize: 10,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -98,7 +98,7 @@ class _PracticeModuleState extends State<PracticeModule> {
                           Visibility(
                             child: Text('Answer: ' + practiceAns[index],
                               style: TextStyle(
-                                fontSize: 15,
+                                fontSize: 10,
                               ),
                             ),
                             visible: isVisible[index],
@@ -118,7 +118,7 @@ class _PracticeModuleState extends State<PracticeModule> {
         ),
         bottomNavigationBar: Container(
           color: primaryBar,
-          padding: EdgeInsets.all(7),
+          // padding: EdgeInsets.all(7),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -132,7 +132,7 @@ class _PracticeModuleState extends State<PracticeModule> {
                 icon: Icon(
                   Icons.home,
                   color: primaryWhite,
-                  size: 40,
+                  size: 35,
                 ),
               ),
               // IconButton(
@@ -158,7 +158,7 @@ class _PracticeModuleState extends State<PracticeModule> {
                 icon: Icon(
                   Icons.account_circle,
                   color: primaryWhite,
-                  size: 40,
+                  size: 35,
                 ),
               ),
             ],

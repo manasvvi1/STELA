@@ -31,172 +31,173 @@ class _ProfileState extends State<Profile> {
         //       color: primaryWhite,
         //     )),
       ),
-      body: Container(
+      body: Center(
+        child: SingleChildScrollView(
           child: Container(
-        margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-        alignment: Alignment.center,
-        padding: EdgeInsets.all(10),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-          Icon(
-            Icons.account_circle_outlined,
-            color: primaryButton,
-            size: 200,
-          ),
-          Container(
-            padding: EdgeInsets.only(
-              bottom: 3, // This can be the space you need between text and underline
-            ),
-            decoration: BoxDecoration(
-                border: Border(bottom: BorderSide(
-                  color: Colors.black,
-                  width: 2.0, // This would be the width of the underline
-                ))
-            ),
-            child: Text(name,
-                style: TextStyle(
-                    color: primaryButton,
-                    fontSize: 20,
-                    fontFamily: 'PTSerif-ExtraBold',
-                    fontWeight: FontWeight.bold)),
-          ),
-          // Container(
-          //   child: Text('__________',
-          //       style: TextStyle(
-          //           color: primaryButton,
-          //           fontSize: 50,
-          //           fontFamily: 'PTSerif',
-          //           fontWeight: FontWeight.bold)),
-          //   margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-          //   alignment: Alignment.center,
-          //   padding: EdgeInsets.all(2),
-          // ),
-              SizedBox(
-                height: 45,
-              ),
-          Container(
-            decoration: BoxDecoration(
-              color: primaryWhite,
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(width: 2.0, color: primaryBar),
-            ),
-            child: Text('Enrollment No. : ' + enrollmentNo,
-                style: TextStyle(
-                    color: primaryBar,
-                    fontSize: 20,
-                    fontFamily: 'PTSerif',
-                    fontWeight: FontWeight.bold)),
-            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              child: Container(
+            margin: EdgeInsets.symmetric(horizontal: 10),
             alignment: Alignment.center,
-            padding: EdgeInsets.all(2),
-          ),
-          Container(
-            decoration: BoxDecoration(
-              color: primaryWhite,
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(width: 2.0, color: primaryBar),
-            ),
-            child: Text('Email ID : ' + email,
-                style: TextStyle(
+            padding: EdgeInsets.all(10),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+              Icon(
+                Icons.account_circle_outlined,
+                color: primaryButton,
+                size: 100,
+              ),
+              Container(
+                padding: EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: primaryWhite,
+                  // borderRadius: BorderRadius.circular(10),
+                  // border: Border.all(width: 2.0, color: primaryBar),
+                ),
+                child: Text(name,
+                    style: TextStyle(
+                        color: primaryBar,
+                        fontSize: 15,
+                        fontFamily: 'PTSerif-ExtraBold',
+                        fontWeight: FontWeight.bold)),
+              ),
+              // Container(
+              //   child: Text('__________',
+              //       style: TextStyle(
+              //           color: primaryButton,
+              //           fontSize: 50,
+              //           fontFamily: 'PTSerif',
+              //           fontWeight: FontWeight.bold)),
+              //   margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              //   alignment: Alignment.center,
+              //   padding: EdgeInsets.all(2),
+              // ),
+                  SizedBox(
+                    height: 30,
+                  ),
+              Container(
+                decoration: BoxDecoration(
+                  color: primaryWhite,
+                  // borderRadius: BorderRadius.circular(10),
+                  // border: Border.all(width: 2.0, color: primaryBar),
+                ),
+                child: Text('Enrollment No. : ' + enrollmentNo,
+                    style: TextStyle(
+                        color: primaryBar,
+                        fontSize: 15,
+                        fontFamily: 'PTSerif',
+                        fontWeight: FontWeight.bold)),
+                margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                alignment: Alignment.center,
+                padding: EdgeInsets.all(2),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  color: primaryWhite,
+                  // borderRadius: BorderRadius.circular(10),
+                  // border: Border.all(width: 2.0, color: primaryBar),
+                ),
+                child: Text('Email ID : ' + email,
+                    style: TextStyle(
+                        color: primaryBar,
+                        fontSize: 15,
+                        fontFamily: 'PTSerif',
+                        fontWeight: FontWeight.bold)),
+                margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                alignment: Alignment.center,
+                padding: EdgeInsets.all(2),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  color: primaryWhite,
+                  // borderRadius: BorderRadius.circular(10),
+                  // border: Border.all(width: 2.0, color: primaryBar),
+                ),
+                child: Text('Contact Number : ' + contactNum,
+                    style: TextStyle(
+                        color: primaryBar,
+                        fontSize: 15,
+                        fontFamily: 'PTSerif',
+                        fontWeight: FontWeight.bold)),
+                margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                alignment: Alignment.center,
+                padding: EdgeInsets.all(2),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ContactUs()),
+                  );
+                },
+                child: Container(
+                  decoration: BoxDecoration(
                     color: primaryBar,
-                    fontSize: 20,
-                    fontFamily: 'PTSerif',
-                    fontWeight: FontWeight.bold)),
-            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-            alignment: Alignment.center,
-            padding: EdgeInsets.all(2),
-          ),
-          Container(
-            decoration: BoxDecoration(
-              color: primaryWhite,
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(width: 2.0, color: primaryBar),
-            ),
-            child: Text('Contact Number : ' + contactNum,
-                style: TextStyle(
-                    color: primaryBar,
-                    fontSize: 20,
-                    fontFamily: 'PTSerif',
-                    fontWeight: FontWeight.bold)),
-            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-            alignment: Alignment.center,
-            padding: EdgeInsets.all(2),
-          ),
-          TextButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => ContactUs()),
-              );
-            },
-            child: Container(
-              decoration: BoxDecoration(
-                color: primaryBar,
-                borderRadius: BorderRadius.circular(10),
-                border: Border.all(width: 2.0, color: primaryBar),
-              ),
-              child: Text('Contact Us',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontFamily: 'PTSerif',
-                      fontWeight: FontWeight.bold)),
-              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-              alignment: Alignment.center,
-              padding: EdgeInsets.symmetric(vertical: 2, horizontal: 0),
-            ),
-          )
-        ]),
-      )),
-      bottomNavigationBar: Container(
-        color: primaryBar,
-        padding: EdgeInsets.all(7),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Subjects()),
-                );
-              },
-              icon: Icon(
-                Icons.home,
-                color: primaryWhite,
-                size: 40,
-              ),
-            ),
-            // IconButton(
-            //   onPressed: () {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(builder: (context) => AnalysisSubjects()),
-            //     );
-            //   },
-            //   icon: Icon(
-            //     Icons.saved_search_rounded,
-            //     color: primaryWhite,
-            //     size: 40,
-            //   ),
-            // ),
-            IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Profile()),
-                );
-              },
-              icon: Icon(
-                Icons.account_circle,
-                color: primaryWhite,
-                size: 40,
-              ),
-            ),
-          ],
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(width: 2.0, color: primaryBar),
+                  ),
+                  child: Text('Contact Us',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15,
+                          fontFamily: 'PTSerif',
+                          fontWeight: FontWeight.bold)),
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.symmetric(vertical: 2, horizontal: 0),
+                ),
+              )
+            ]),
+          )),
         ),
       ),
+          bottomNavigationBar: Container(
+            color: primaryBar,
+            // padding: EdgeInsets.all(7),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Subjects()),
+                    );
+                  },
+                  icon: Icon(
+                    Icons.home,
+                    color: primaryWhite,
+                    size: 35,
+                  ),
+                ),
+                // IconButton(
+                //   onPressed: () {
+                //     Navigator.push(
+                //       context,
+                //       MaterialPageRoute(builder: (context) => AnalysisSubjects()),
+                //     );
+                //   },
+                //   icon: Icon(
+                //     Icons.saved_search_rounded,
+                //     color: primaryWhite,
+                //     size: 40,
+                //   ),
+                // ),
+                IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Profile()),
+                    );
+                  },
+                  icon: Icon(
+                    Icons.account_circle,
+                    color: primaryWhite,
+                    size: 35,
+                  ),
+                ),
+              ],
+            ),
+          ),
     ));
   }
 }

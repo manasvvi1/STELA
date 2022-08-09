@@ -39,7 +39,7 @@ class _ExperimentListState extends State<ExperimentList> {
           ),
           body: SingleChildScrollView(
             child: Container(
-              margin: EdgeInsets.symmetric(vertical: 40, horizontal: 10),
+              // margin: EdgeInsets.symmetric(vertical: 40, horizontal: 10),
               alignment: Alignment.center,
               padding: EdgeInsets.all(10),
               child: Column(
@@ -48,7 +48,7 @@ class _ExperimentListState extends State<ExperimentList> {
                       padding: EdgeInsets.all(10),
                       child: Text('Experiment List',
                           style: TextStyle(
-                              fontSize: 25,
+                              fontSize: 20,
                               fontFamily: 'PTSerif-Bold',
                               fontWeight: FontWeight.bold))),
                   Container(
@@ -69,7 +69,7 @@ class _ExperimentListState extends State<ExperimentList> {
                                 ),
                                 child: Text('Experiment No. ' + expNo[index],
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      fontSize: 15,
                                       fontFamily: 'PTSerif',
                                       color: primaryBar,
                                     ),
@@ -94,7 +94,7 @@ class _ExperimentListState extends State<ExperimentList> {
           ),
           bottomNavigationBar: Container(
             color: primaryBar,
-            padding: EdgeInsets.all(7),
+            // padding: EdgeInsets.all(7),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -108,15 +108,14 @@ class _ExperimentListState extends State<ExperimentList> {
                   icon: Icon(
                     Icons.home,
                     color: primaryWhite,
-                    size: 40,
+                    size: 35,
                   ),
                 ),
                 // IconButton(
                 //   onPressed: () {
                 //     Navigator.push(
                 //       context,
-                //       MaterialPageRoute(
-                //           builder: (context) => AnalysisSubjects()),
+                //       MaterialPageRoute(builder: (context) => AnalysisSubjects()),
                 //     );
                 //   },
                 //   icon: Icon(
@@ -135,12 +134,12 @@ class _ExperimentListState extends State<ExperimentList> {
                   icon: Icon(
                     Icons.account_circle,
                     color: primaryWhite,
-                    size: 40,
+                    size: 35,
                   ),
                 ),
               ],
             ),
-          )),
+          ),),
     );
   }
 }

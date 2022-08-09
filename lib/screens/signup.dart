@@ -38,7 +38,7 @@ class SignUp extends StatelessWidget {
                   Container(
                     child: Text('SIGN UP',
                         style: TextStyle(
-                            fontSize: 50,
+                            fontSize: 25,
                             fontFamily: 'PTSerif',
                             fontWeight: FontWeight.bold)),
                     alignment: Alignment.center,
@@ -175,9 +175,9 @@ class SignUp extends StatelessWidget {
                           border: Border.all(width: 2.0, color: primaryBar),
                         ),
                         child: Text(
-                          'SIGNUP',
+                          'SIGN UP',
                           style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 15,
                               fontFamily: 'PTSerif',
                               fontWeight: FontWeight.bold,
                               color: primaryBar),
@@ -216,9 +216,9 @@ class SignUp extends StatelessWidget {
                       }
                     },
                   ),
-                  SizedBox(
-                    height: 40,
-                  )
+                  // SizedBox(
+                  //   height: 40,
+                  // )
                 ],
               ),
             ),

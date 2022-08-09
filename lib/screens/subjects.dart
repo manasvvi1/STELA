@@ -57,21 +57,21 @@ class _SubjectsState extends State<Subjects> {
                       children: [
                         Text('Artificial Intelligence',
                             style: TextStyle(
-                              fontSize: 25,
+                              fontSize: 20,
                               fontFamily: 'PTSerif-Bold',
-                              color: primaryWhite,
+                              color: primaryBar,
                             )),
                         Text('M. Tech.',
                             style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 15,
                               fontFamily: 'PTSerif',
-                              color: primaryWhite,
+                              color: primaryBar,
                             )),
                         Text('>>>',
                             style: TextStyle(
-                              fontSize: 25,
+                              fontSize: 20,
                               fontFamily: 'PTSerif',
-                              color: primaryWhite,
+                              color: primaryBar,
                             ))
                       ],
                     )),
@@ -84,55 +84,54 @@ class _SubjectsState extends State<Subjects> {
               ),
             ),
           ),
-          bottomNavigationBar: Container(
-            color: primaryBar,
-            padding: EdgeInsets.all(7),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                IconButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Subjects()),
-                    );
-                  },
-                  icon: Icon(
-                    Icons.home,
-                    color: primaryWhite,
-                    size: 40,
-                  ),
+        bottomNavigationBar: Container(
+          color: primaryBar,
+          // padding: EdgeInsets.all(7),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              IconButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Subjects()),
+                  );
+                },
+                icon: Icon(
+                  Icons.home,
+                  color: primaryWhite,
+                  size: 35,
                 ),
-                // IconButton(
-                //   onPressed: () {
-                //     Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //           builder: (context) => AnalysisSubjects()),
-                //     );
-                //   },
-                //   icon: Icon(
-                //     Icons.saved_search_rounded,
-                //     color: primaryWhite,
-                //     size: 40,
-                //   ),
-                // ),
-                IconButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Profile()),
-                    );
-                  },
-                  icon: Icon(
-                    Icons.account_circle,
-                    color: primaryWhite,
-                    size: 40,
-                  ),
+              ),
+              // IconButton(
+              //   onPressed: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => AnalysisSubjects()),
+              //     );
+              //   },
+              //   icon: Icon(
+              //     Icons.saved_search_rounded,
+              //     color: primaryWhite,
+              //     size: 40,
+              //   ),
+              // ),
+              IconButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Profile()),
+                  );
+                },
+                icon: Icon(
+                  Icons.account_circle,
+                  color: primaryWhite,
+                  size: 35,
                 ),
-              ],
-            ),
-          )),
+              ),
+            ],
+          ),
+        ),),
     );
   }
 }

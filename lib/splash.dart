@@ -41,7 +41,7 @@ class _SplashState extends State<Splash> {
         "Loading",
         style: TextStyle(color: primaryWhite),
       ),
-      photoSize: 200.0,
+      photoSize: 100.0,
       loaderColor: Colors.blue,
     );
   }
