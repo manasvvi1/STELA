@@ -57,19 +57,10 @@ class Experiment extends StatelessWidget {
                   Container(
                     padding: EdgeInsets.all(10),
                     width: double.infinity,
-                    child: Flexible(
-                      child: Container(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            Text(
-                              aim,
-                              style: TextStyle(
-                                fontSize: 12,
-                              ),
-                            ),
-                          ],
-                        ),
+                    child: Text(
+                      aim,
+                      style: TextStyle(
+                        fontSize: 12,
                       ),
                     ),
                   ), // AIM text
@@ -90,19 +81,10 @@ class Experiment extends StatelessWidget {
                     Container(
                       padding: EdgeInsets.all(10),
                       width: double.infinity,
-                      child: Flexible(
-                        child: Container(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                procedure,
-                                style: TextStyle(
-                                  fontSize: 12,
-                                ),
-                              ),
-                            ],
-                          ),
+                      child: Text(
+                        procedure,
+                        style: TextStyle(
+                          fontSize: 12,
                         ),
                       ),
                     ),
@@ -124,19 +106,10 @@ class Experiment extends StatelessWidget {
                     Container(
                       padding: EdgeInsets.all(10),
                       width: double.infinity,
-                      child: Flexible(
-                        child: Container(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                algorithm,
-                                style: TextStyle(
-                                  fontSize: 12,
-                                ),
-                              ),
-                            ],
-                          ),
+                      child: Text(
+                        algorithm,
+                        style: TextStyle(
+                          fontSize: 12,
                         ),
                       ),
                     ),
@@ -158,19 +131,10 @@ class Experiment extends StatelessWidget {
                     Container(
                       padding: EdgeInsets.all(10),
                       width: double.infinity,
-                      child: Flexible(
-                        child: Container(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                program,
-                                style: TextStyle(
-                                  fontSize: 12,
-                                ),
-                              ),
-                            ],
-                          ),
+                      child: Text(
+                        program,
+                        style: TextStyle(
+                          fontSize: 12,
                         ),
                       ),
                     ), // PROGRAM text
@@ -192,19 +156,10 @@ class Experiment extends StatelessWidget {
                     Container(
                       padding: EdgeInsets.all(10),
                       width: double.infinity,
-                      child: Flexible(
-                        child: Container(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                result,
-                                style: TextStyle(
-                                  fontSize: 12,
-                                ),
-                              ),
-                            ],
-                          ),
+                      child: Text(
+                        result,
+                        style: TextStyle(
+                          fontSize: 12,
                         ),
                       ),
                     ), // RESULT text
